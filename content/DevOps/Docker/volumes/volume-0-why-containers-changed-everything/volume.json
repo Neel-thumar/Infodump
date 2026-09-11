@@ -1,0 +1,22 @@
+{
+  "title": "Volume 0 — Prologue: Why Containers Changed Everything",
+  "bookTitle": "Mastering Docker: The Engineering, The History, The Incidents",
+  "description": "",
+  "id": null,
+  "order": 0,
+  "draft": false,
+  "access": {},
+  "thumbnail": null,
+  "sourceFilename": "volume-0-why-containers-changed-everything.md",
+  "sourceSha256": "227bdecb871c628723fd14400b57a797dd300b0fc7a25dc0ca00b4694d8a0c16",
+  "chapterTitles": {
+    "00-overview.md": "Overview",
+    "01-cold-open-the-number.md": "Cold open: the number",
+    "02-the-pain-that-existed-before.md": "The pain that existed before",
+    "03-a-short-honest-history.md": "A short, honest history",
+    "04-what-docker-actually-invented.md": "What Docker actually invented",
+    "05-things-you-re-about-to-understand-that-most-daily-docker-users-never-learn.md": "Things you're about to understand that most daily Docker users never learn",
+    "06-try-this-on-your-machine.md": "TRY THIS ON YOUR MACHINE",
+    "07-send-off.md": "Send-off"
+  }
+}

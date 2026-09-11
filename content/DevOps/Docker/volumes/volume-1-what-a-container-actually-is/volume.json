@@ -1,0 +1,24 @@
+{
+  "title": "Volume 1 — What a Container Actually Is (Not a VM)",
+  "bookTitle": "Mastering Docker: The Engineering, The History, The Incidents",
+  "description": "Namespaces, cgroups, and OverlayFS derived from first principles — why a container is an ordinary Linux process with a restricted view, and where that illusion breaks.",
+  "id": "container-not-a-vm",
+  "order": 1,
+  "draft": false,
+  "access": {},
+  "thumbnail": null,
+  "sourceFilename": "volume-1-what-a-container-actually-is.md",
+  "sourceSha256": "b6185ccacd6ae1bcdd2d3083dc482432a2bd43cfd2912552946fe2637a37254a",
+  "chapterTitles": {
+    "00-overview.md": "Overview",
+    "01-the-question-this-volume-answers.md": "The question this volume answers",
+    "02-first-kill-the-vm-metaphor.md": "First, kill the VM metaphor",
+    "03-namespaces-the-kernel-lying-on-purpose.md": "Namespaces: the kernel lying on purpose",
+    "04-cgroups-the-budget.md": "cgroups: the budget",
+    "05-overlayfs-why-this-costs-nothing.md": "OverlayFS: why this costs nothing",
+    "06-when-you-should-still-use-a-vm.md": "When you should still use a VM",
+    "07-the-incident-cve-2019-5736.md": "The incident: CVE-2019-5736",
+    "08-try-this-on-your-machine.md": "TRY THIS ON YOUR MACHINE",
+    "09-where-this-leaves-you-and-what-s-next.md": "Where this leaves you, and what's next"
+  }
+}
