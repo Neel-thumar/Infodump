@@ -1,0 +1,22 @@
+{
+  "title": "Volume 10 — Epilogue: Where AWS Sits Now",
+  "bookTitle": "Mastering AWS: The Engineering, The History, The Incidents",
+  "description": "The current landscape with honest caveats about how fast it ages, a branching menu for what to learn next based on what gripped you, a career map that doesn't sell certifications, and what you actually walked away with.",
+  "id": "epilogue",
+  "order": 10,
+  "draft": false,
+  "access": {},
+  "thumbnail": null,
+  "sourceFilename": "volume-10-epilogue.md",
+  "sourceSha256": "75641f1a73e549c524d79624cf56a3ee7e9ef4e4092af3fb3bb0a6685078ee54",
+  "chapterTitles": {
+    "00-overview.md": "Overview",
+    "01-before-anything-else-a-warning-about-this-volume.md": "Before Anything Else: A Warning About This Volume",
+    "02-where-aws-actually-sits.md": "Where AWS Actually Sits",
+    "03-what-you-didn-t-learn-here.md": "What You Didn't Learn Here",
+    "04-what-next-a-branching-menu.md": "What Next: A Branching Menu",
+    "05-the-career-map-honestly.md": "The Career Map, Honestly",
+    "06-try-this-on-your-machine.md": "TRY THIS ON YOUR MACHINE",
+    "07-a-closing-reflection.md": "A Closing Reflection"
+  }
+}

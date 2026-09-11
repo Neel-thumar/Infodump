@@ -1,0 +1,30 @@
+{
+  "title": "Volume 9 — Cost and Control: Billing, Organizations, Infrastructure as Code",
+  "bookTitle": "Mastering AWS: The Engineering, The History, The Incidents",
+  "description": "Why data transfer is the tax nobody budgets for, what each commitment model actually commits you to, and how CloudFormation, Organizations and SCPs turn an account into a practice — plus the bill for an empty bucket and the licence change that split an ecosystem.",
+  "id": "cost-governance",
+  "order": 9,
+  "draft": false,
+  "access": {},
+  "thumbnail": null,
+  "sourceFilename": "volume-9-cost-governance.md",
+  "sourceSha256": "17d4e5dbaf050687ee22bf8db24a7e303313f95d7a5c1c38d68eef76cbab76a0",
+  "chapterTitles": {
+    "00-overview.md": "Overview",
+    "01-the-question-this-volume-answers.md": "The Question This Volume Answers",
+    "02-part-one-money.md": "Part One: Money",
+    "03-the-problem-nobody-can-see-the-price-tag.md": "THE PROBLEM: Nobody Can See the Price Tag",
+    "04-the-mechanism-what-actually-costs-money.md": "THE MECHANISM: What Actually Costs Money",
+    "05-the-mechanism-commitment-models.md": "THE MECHANISM: Commitment Models",
+    "06-the-mechanism-seeing-the-bill.md": "THE MECHANISM: Seeing the Bill",
+    "07-real-incident-the-bill-for-an-empty-bucket.md": "REAL INCIDENT: The Bill for an Empty Bucket",
+    "08-part-two-control.md": "Part Two: Control",
+    "09-the-problem-click-ops-doesn-t-survive-contact-with-reality.md": "THE PROBLEM: Click-Ops Doesn't Survive Contact With Reality",
+    "10-the-mechanism-cloudformation.md": "THE MECHANISM: CloudFormation",
+    "11-the-mechanism-terraform-and-being-precise-about-what-it-is.md": "THE MECHANISM: Terraform — and Being Precise About What It Is",
+    "12-the-mechanism-organizations-and-scps.md": "THE MECHANISM: Organizations and SCPs",
+    "13-try-this-on-your-machine.md": "TRY THIS ON YOUR MACHINE",
+    "14-what-you-should-now-be-able-to-say.md": "What You Should Now Be Able To Say",
+    "15-where-we-go-next.md": "Where We Go Next"
+  }
+}

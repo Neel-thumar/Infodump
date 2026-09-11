@@ -1,0 +1,25 @@
+{
+  "title": "Volume 3 — VPC: Building a Network That Doesn't Exist",
+  "bookTitle": "Mastering AWS: The Engineering, The History, The Incidents",
+  "description": "Construct a private network from an empty CIDR block up — subnets, routing, gateways, and the stateful/stateless distinction that burns more debugging hours than anything else in AWS.",
+  "id": "vpc-networking",
+  "order": 3,
+  "draft": false,
+  "access": {},
+  "thumbnail": null,
+  "sourceFilename": "volume-3-vpc-networking.md",
+  "sourceSha256": "18c72b133b294ea7e50fdd37915726d58a0b24df0383fde37c4fc381a074c563",
+  "chapterTitles": {
+    "00-overview.md": "Overview",
+    "01-the-question-this-volume-answers.md": "The Question This Volume Answers",
+    "02-the-problem-everyone-was-on-the-same-network.md": "THE PROBLEM: Everyone Was on the Same Network",
+    "03-the-mechanism-building-a-vpc-from-nothing.md": "THE MECHANISM: Building a VPC From Nothing",
+    "04-the-mechanism-security-groups-vs-network-acls.md": "THE MECHANISM: Security Groups vs. Network ACLs",
+    "05-the-mechanism-the-remaining-pieces.md": "THE MECHANISM: The Remaining Pieces",
+    "06-real-incident-the-0-0-0-0-0-pattern.md": "REAL INCIDENT: The 0.0.0.0/0 Pattern",
+    "07-real-incident-the-nat-gateway-bill.md": "REAL INCIDENT: The NAT Gateway Bill",
+    "08-try-this-on-your-machine.md": "TRY THIS ON YOUR MACHINE",
+    "09-what-you-should-now-be-able-to-say.md": "What You Should Now Be Able To Say",
+    "10-where-we-go-next.md": "Where We Go Next"
+  }
+}

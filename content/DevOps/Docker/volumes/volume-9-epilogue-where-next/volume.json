@@ -1,0 +1,21 @@
+{
+  "title": "Volume 9 — Epilogue: Where This Goes From Here",
+  "bookTitle": "Mastering Docker: The Engineering, The History, The Incidents",
+  "description": "Where containers actually run today, a branching map of what to learn next, an honest career map, and a look back at what changed since Volume 0.",
+  "id": "epilogue-where-next",
+  "order": 9,
+  "draft": false,
+  "access": {},
+  "thumbnail": null,
+  "sourceFilename": "volume-9-epilogue-where-next.md",
+  "sourceSha256": "0d25395104253c8fa79138f7c8bc1cd0f30c52f69674a8796542b782b33746b8",
+  "chapterTitles": {
+    "00-overview.md": "Overview",
+    "01-where-containers-actually-run-today.md": "Where containers actually run today",
+    "02-what-to-learn-next.md": "What to learn next",
+    "03-an-honest-career-map.md": "An honest career map",
+    "04-try-this-on-your-machine.md": "TRY THIS ON YOUR MACHINE",
+    "05-what-knowing-docker-means-now.md": "What \"knowing Docker\" means now",
+    "06-a-closing-note.md": "A closing note"
+  }
+}

@@ -8,6 +8,8 @@
     "build": "next build",
     "start": "next start --hostname 127.0.0.1",
     "seed": "node scripts/seed.mjs",
+    "courses:plan": "node scripts/import-courses.mjs",
+    "courses:import": "node scripts/import-courses.mjs --write",
     "chapters:plan": "node scripts/split-chapters.mjs",
     "chapters:split": "node scripts/split-chapters.mjs --write",
     "chapters:verify": "node scripts/verify-chapters.mjs",

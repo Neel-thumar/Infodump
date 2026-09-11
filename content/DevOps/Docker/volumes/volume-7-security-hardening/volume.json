@@ -1,0 +1,24 @@
+{
+  "title": "Volume 7 — Security and Production Hardening",
+  "bookTitle": "Mastering Docker: The Engineering, The History, The Incidents",
+  "description": "An honest container threat model, each defence introduced by the attack it stops, secrets done properly, and the worms that hunt exposed Docker daemons.",
+  "id": "security-hardening",
+  "order": 7,
+  "draft": false,
+  "access": {},
+  "thumbnail": null,
+  "sourceFilename": "volume-7-security-hardening.md",
+  "sourceSha256": "0c24f505373128d5cc8b0a6a6d04cb76e4cdbf44fe22cd8b73b3ec48e6947816",
+  "chapterTitles": {
+    "00-overview.md": "Overview",
+    "01-the-question-this-volume-answers.md": "The question this volume answers",
+    "02-the-honest-threat-model.md": "The honest threat model",
+    "03-defences-each-by-the-attack-it-stops.md": "Defences, each by the attack it stops",
+    "04-images-reducing-what-s-there-to-attack.md": "Images: reducing what's there to attack",
+    "05-secrets-properly.md": "Secrets, properly",
+    "06-hardening-the-volume-6-application.md": "Hardening the Volume 6 application",
+    "07-the-incident-the-worms-that-hunt-exposed-daemons.md": "The incident: the worms that hunt exposed daemons",
+    "08-try-this-on-your-machine.md": "TRY THIS ON YOUR MACHINE",
+    "09-where-this-leaves-you-and-what-s-next.md": "Where this leaves you, and what's next"
+  }
+}

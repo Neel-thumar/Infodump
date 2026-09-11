@@ -1,0 +1,33 @@
+{
+  "title": "Volume 5 — S3 and the Edge: Object Storage, CloudFront, Route 53",
+  "bookTitle": "Mastering AWS: The Engineering, The History, The Incidents",
+  "description": "The service that shipped before EC2, the three overlapping permission systems that explain the open-bucket epidemic, and how DNS and CDNs put your bytes near the planet — anchored on the 2017 typo outage and the 2018 BGP hijack.",
+  "id": "s3-edge",
+  "order": 5,
+  "draft": false,
+  "access": {},
+  "thumbnail": null,
+  "sourceFilename": "volume-5-s3-edge.md",
+  "sourceSha256": "baa4295bdf10e1a99808362e35c23176f0c653d51e58b3d95b6f96a495ada79d",
+  "chapterTitles": {
+    "00-overview.md": "Overview",
+    "01-the-question-this-volume-answers.md": "The Question This Volume Answers",
+    "02-part-one-s3.md": "Part One: S3",
+    "03-the-problem-filesystems-don-t-scale-to-the-internet.md": "THE PROBLEM: Filesystems Don't Scale to the Internet",
+    "04-the-mechanism-there-are-no-folders.md": "THE MECHANISM: There Are No Folders",
+    "05-the-mechanism-durability-vs-availability.md": "THE MECHANISM: Durability vs. Availability",
+    "06-the-mechanism-consistency-and-the-2020-change.md": "THE MECHANISM: Consistency, and the 2020 Change",
+    "07-the-mechanism-storage-classes-and-the-cost-of-forgetting.md": "THE MECHANISM: Storage Classes and the Cost of Forgetting",
+    "08-the-mechanism-the-three-permission-systems.md": "THE MECHANISM: The Three Permission Systems",
+    "09-real-incident-the-2017-open-bucket-epidemic.md": "REAL INCIDENT: The 2017 Open Bucket Epidemic",
+    "10-real-incident-february-28-2017-the-typo.md": "REAL INCIDENT: February 28, 2017 — The Typo",
+    "11-part-two-the-edge.md": "Part Two: The Edge",
+    "12-the-problem-the-speed-of-light-and-the-weakness-of-names.md": "THE PROBLEM: The Speed of Light and the Weakness of Names",
+    "13-the-mechanism-how-dns-actually-resolves.md": "THE MECHANISM: How DNS Actually Resolves",
+    "14-the-mechanism-cloudfront.md": "THE MECHANISM: CloudFront",
+    "15-real-incident-april-24-2018-hijacking-the-map.md": "REAL INCIDENT: April 24, 2018 — Hijacking the Map",
+    "16-try-this-on-your-machine.md": "TRY THIS ON YOUR MACHINE",
+    "17-what-you-should-now-be-able-to-say.md": "What You Should Now Be Able To Say",
+    "18-where-we-go-next.md": "Where We Go Next"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "title": "Volume 5 — Networking, Deeply",
+  "bookTitle": "Mastering Docker: The Engineering, The History, The Incidents",
+  "description": "Veth pairs, bridges and NAT built by hand, a packet traced hop by hop into a container, the real iptables rules Docker writes, and how embedded DNS works.",
+  "id": "networking-deeply",
+  "order": 5,
+  "draft": false,
+  "access": {},
+  "thumbnail": null,
+  "sourceFilename": "volume-5-networking-deeply.md",
+  "sourceSha256": "daae13ded890a9add9b140e546f2bb3eda9294a36ba3b7fb67ba180d69bcacbf",
+  "chapterTitles": {
+    "00-overview.md": "Overview",
+    "01-the-question-this-volume-answers.md": "The question this volume answers",
+    "02-build-container-networking-by-hand.md": "Build container networking by hand",
+    "03-now-find-docker-doing-exactly-this.md": "Now find Docker doing exactly this",
+    "04-the-four-drivers-at-namespace-level.md": "The four drivers, at namespace level",
+    "05-tracing-a-packet-hop-by-hop.md": "Tracing a packet, hop by hop",
+    "06-dns-and-service-discovery.md": "DNS and service discovery",
+    "07-the-incident-the-firewall-that-wasn-t-consulted.md": "The incident: the firewall that wasn't consulted",
+    "08-try-this-on-your-machine.md": "TRY THIS ON YOUR MACHINE",
+    "09-where-this-leaves-you-and-what-s-next.md": "Where this leaves you, and what's next"
+  }
+}

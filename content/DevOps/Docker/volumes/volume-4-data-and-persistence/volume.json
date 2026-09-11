@@ -1,0 +1,26 @@
+{
+  "title": "Volume 4 — Data and Persistence",
+  "bookTitle": "Mastering Docker: The Engineering, The History, The Incidents",
+  "description": "Where container data actually lives, how volumes, bind mounts and tmpfs differ at the mount-namespace level, and a worked backup and restore.",
+  "id": "data-and-persistence",
+  "order": 4,
+  "draft": false,
+  "access": {},
+  "thumbnail": null,
+  "sourceFilename": "volume-4-data-and-persistence.md",
+  "sourceSha256": "1b048bfb8ed2b1e8a280bb844d6dc76ca3825170207899b0415f6f828ed17860",
+  "chapterTitles": {
+    "00-overview.md": "Overview",
+    "01-the-question-this-volume-answers.md": "The question this volume answers",
+    "02-first-watch-the-data-loss.md": "First, watch the data loss",
+    "03-the-mechanism-it-s-all-mounts.md": "The mechanism: it's all mounts",
+    "04-volumes.md": "Volumes",
+    "05-bind-mounts.md": "Bind mounts",
+    "06-tmpfs-mounts.md": "tmpfs mounts",
+    "07-volume-drivers.md": "Volume drivers",
+    "08-backing-up-and-restoring-a-volume.md": "Backing up and restoring a volume",
+    "09-the-incident.md": "The incident",
+    "10-try-this-on-your-machine.md": "TRY THIS ON YOUR MACHINE",
+    "11-where-this-leaves-you-and-what-s-next.md": "Where this leaves you, and what's next"
+  }
+}

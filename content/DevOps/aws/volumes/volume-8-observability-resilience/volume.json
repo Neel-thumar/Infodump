@@ -1,0 +1,29 @@
+{
+  "title": "Volume 8 — Knowing What Happened, and Surviving It: Observability, HA, DR",
+  "bookTitle": "Mastering AWS: The Engineering, The History, The Incidents",
+  "description": "Metrics, logs, traces and the forensic record, then RTO and RPO as engineering inputs, the four DR strategies honestly costed, and static stability — anchored on breaches found months late and Netflix's 2011 method.",
+  "id": "observability-resilience",
+  "order": 8,
+  "draft": false,
+  "access": {},
+  "thumbnail": null,
+  "sourceFilename": "volume-8-observability-resilience.md",
+  "sourceSha256": "10fb32c80dec78480e54b280c38f5f24cbde733806623d4e63a57f605f39057b",
+  "chapterTitles": {
+    "00-overview.md": "Overview",
+    "01-the-question-this-volume-answers.md": "The Question This Volume Answers",
+    "02-part-one-knowing-what-happened.md": "Part One: Knowing What Happened",
+    "03-the-problem-you-can-t-debug-what-you-didn-t-record.md": "THE PROBLEM: You Can't Debug What You Didn't Record",
+    "04-the-mechanism-three-different-things.md": "THE MECHANISM: Three Different Things",
+    "05-the-mechanism-cloudtrail-and-the-setting-that-s-off.md": "THE MECHANISM: CloudTrail, and the Setting That's Off",
+    "06-real-incident-the-months-nobody-noticed.md": "REAL INCIDENT: The Months Nobody Noticed",
+    "07-part-two-surviving-it.md": "Part Two: Surviving It",
+    "08-the-problem-highly-available-is-not-a-specification.md": "THE PROBLEM: \"Highly Available\" Is Not a Specification",
+    "09-the-mechanism-the-four-strategies.md": "THE MECHANISM: The Four Strategies",
+    "10-the-mechanism-static-stability.md": "THE MECHANISM: Static Stability",
+    "11-real-incident-netflix-2011-chaos-as-method.md": "REAL INCIDENT: Netflix, 2011 — Chaos as Method",
+    "12-try-this-on-your-machine.md": "TRY THIS ON YOUR MACHINE",
+    "13-what-you-should-now-be-able-to-say.md": "What You Should Now Be Able To Say",
+    "14-where-we-go-next.md": "Where We Go Next"
+  }
+}

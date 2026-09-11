@@ -25,7 +25,7 @@ export function accessMetadata(value, warn) {
 }
 export function parseDocument(raw, filename, warn = console.warn) {
   let data = {}, body = raw;
-  try { ({ data, content: body } = matter(raw)); }
+  try { ({ data, content: body } = matter(raw, {})); }
   catch (error) {
     warn(`Malformed frontmatter in ${filename}: ${error.message}`);
     // Do not interpret invalid YAML as document headings or a title.

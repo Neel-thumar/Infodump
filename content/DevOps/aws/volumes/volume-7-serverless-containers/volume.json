@@ -1,0 +1,30 @@
+{
+  "title": "Volume 7 — Compute Without Instances: Lambda, ECR, ECS, EKS",
+  "bookTitle": "Mastering AWS: The Engineering, The History, The Incidents",
+  "description": "Firecracker microVMs, what actually causes cold starts, concurrency limits as an outage mechanism, and an honest accounting of which parts of AWS containers are AWS's — anchored on the recursive trigger and Log4Shell.",
+  "id": "serverless-containers",
+  "order": 7,
+  "draft": false,
+  "access": {},
+  "thumbnail": null,
+  "sourceFilename": "volume-7-serverless-containers.md",
+  "sourceSha256": "07d37ce2e444cd9b5ab573aa1e4d590c8f0296e34ece5a45e81566a6b2e0a2d1",
+  "chapterTitles": {
+    "00-overview.md": "Overview",
+    "01-the-question-this-volume-answers.md": "The Question This Volume Answers",
+    "02-part-one-lambda.md": "Part One: Lambda",
+    "03-the-problem-isolation-was-either-safe-or-fast.md": "THE PROBLEM: Isolation Was Either Safe or Fast",
+    "04-the-mechanism-firecracker.md": "THE MECHANISM: Firecracker",
+    "05-the-mechanism-the-execution-model.md": "THE MECHANISM: The Execution Model",
+    "06-the-mechanism-cold-starts-properly-understood.md": "THE MECHANISM: Cold Starts, Properly Understood",
+    "07-the-mechanism-concurrency-and-how-it-becomes-an-outage.md": "THE MECHANISM: Concurrency, and How It Becomes an Outage",
+    "08-real-incident-the-recursive-trigger.md": "REAL INCIDENT: The Recursive Trigger",
+    "09-part-two-containers.md": "Part Two: Containers",
+    "10-the-problem-it-works-on-my-machine.md": "THE PROBLEM: \"It Works on My Machine\"",
+    "11-the-mechanism-being-precise-about-what-s-aws.md": "THE MECHANISM: Being Precise About What's AWS",
+    "12-real-incident-log4shell-december-2021.md": "REAL INCIDENT: Log4Shell, December 2021",
+    "13-try-this-on-your-machine.md": "TRY THIS ON YOUR MACHINE",
+    "14-what-you-should-now-be-able-to-say.md": "What You Should Now Be Able To Say",
+    "15-where-we-go-next.md": "Where We Go Next"
+  }
+}

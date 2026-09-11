@@ -1,0 +1,23 @@
+{
+  "title": "Volume 6 — Docker Compose and Multi-Container Applications",
+  "bookTitle": "Mastering Docker: The Engineering, The History, The Incidents",
+  "description": "What Compose actually automates, a real multi-service application built from first principles, and why depends_on waits for started rather than ready.",
+  "id": "compose-multi-container",
+  "order": 6,
+  "draft": false,
+  "access": {},
+  "thumbnail": null,
+  "sourceFilename": "volume-6-compose-multi-container.md",
+  "sourceSha256": "a29970b9fe0e953470c80241e9851ab14186fa87086eac7c6361778d33a38b67",
+  "chapterTitles": {
+    "00-overview.md": "Overview",
+    "01-the-question-this-volume-answers.md": "The question this volume answers",
+    "02-compose-from-first-principles.md": "Compose from first principles",
+    "03-building-a-real-multi-service-application.md": "Building a real multi-service application",
+    "04-the-compose-file-key-by-key.md": "The Compose file, key by key",
+    "05-the-commands.md": "The commands",
+    "06-the-incident-depends-on-waits-for-the-wrong-thing.md": "The incident: depends_on waits for the wrong thing",
+    "07-try-this-on-your-machine.md": "TRY THIS ON YOUR MACHINE",
+    "08-where-this-leaves-you-and-what-s-next.md": "Where this leaves you, and what's next"
+  }
+}

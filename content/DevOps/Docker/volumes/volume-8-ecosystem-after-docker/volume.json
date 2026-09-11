@@ -1,0 +1,23 @@
+{
+  "title": "Volume 8 — The Ecosystem and What Comes After Docker",
+  "bookTitle": "Mastering Docker: The Engineering, The History, The Incidents",
+  "description": "OCI, containerd and runc, rootless and daemonless alternatives, Kubernetes scoped honestly, and how Docker Inc. invented an era and sold its enterprise business.",
+  "id": "ecosystem-after-docker",
+  "order": 8,
+  "draft": false,
+  "access": {},
+  "thumbnail": null,
+  "sourceFilename": "volume-8-ecosystem-after-docker.md",
+  "sourceSha256": "259e62c3d563d174bed9fa4b110b834328ef3b242a7a1f17d0bd187db0325202",
+  "chapterTitles": {
+    "00-overview.md": "Overview",
+    "01-the-question-this-volume-answers.md": "The question this volume answers",
+    "02-the-open-container-initiative.md": "The Open Container Initiative",
+    "03-the-runtime-stack-what-docker-actually-delegates.md": "The runtime stack: what Docker actually delegates",
+    "04-podman-and-the-daemonless-alternatives.md": "Podman and the daemonless alternatives",
+    "05-kubernetes-scoped-honestly.md": "Kubernetes, scoped honestly",
+    "06-the-incident-how-docker-invented-an-era-and-sold-the-business.md": "The incident: how Docker invented an era and sold the business",
+    "07-try-this-on-your-machine.md": "TRY THIS ON YOUR MACHINE",
+    "08-where-this-leaves-you-and-what-s-next.md": "Where this leaves you, and what's next"
+  }
+}

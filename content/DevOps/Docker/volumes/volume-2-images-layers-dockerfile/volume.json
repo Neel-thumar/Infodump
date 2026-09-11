@@ -1,0 +1,24 @@
+{
+  "title": "Volume 2 — Images, Layers, and the Dockerfile",
+  "bookTitle": "Mastering Docker: The Engineering, The History, The Incidents",
+  "description": "What an image actually is on disk, how the build cache really decides, multi-stage builds with a measured before/after, and why \"latest\" is a trap.",
+  "id": "images-layers-dockerfile",
+  "order": 2,
+  "draft": false,
+  "access": {},
+  "thumbnail": null,
+  "sourceFilename": "volume-2-images-layers-dockerfile.md",
+  "sourceSha256": "04e405232fe6111b6b582ef1e9e5c80adfa72867a0f9199c00f2590ae4dbe6a0",
+  "chapterTitles": {
+    "00-overview.md": "Overview",
+    "01-the-question-this-volume-answers.md": "The question this volume answers",
+    "02-what-an-image-actually-is.md": "What an image actually is",
+    "03-writing-a-dockerfile-from-first-principles.md": "Writing a Dockerfile from first principles",
+    "04-the-build-cache-mechanically.md": "The build cache, mechanically",
+    "05-multi-stage-builds.md": "Multi-stage builds",
+    "06-tags-digests-and-the-latest-trap.md": "Tags, digests, and the latest trap",
+    "07-the-incident-17-images-5-million-pulls.md": "The incident: 17 images, 5 million pulls",
+    "08-try-this-on-your-machine.md": "TRY THIS ON YOUR MACHINE",
+    "09-where-this-leaves-you-and-what-s-next.md": "Where this leaves you, and what's next"
+  }
+}

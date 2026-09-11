@@ -1,0 +1,27 @@
+{
+  "title": "Volume 6 — RDS and Aurora: Handing Someone Else Your Database",
+  "bookTitle": "Mastering AWS: The Engineering, The History, The Incidents",
+  "description": "What you actually surrender to a managed database, how Multi-AZ failover differs mechanically from read replicas, and why Aurora rebuilt the storage layer around the redo log — plus the failovers that were configured and never drilled.",
+  "id": "rds-aurora",
+  "order": 6,
+  "draft": false,
+  "access": {},
+  "thumbnail": null,
+  "sourceFilename": "volume-6-rds-aurora.md",
+  "sourceSha256": "d89f207f7b4c8b4e906921b4ec874bb8d55021b0b6dfac0d6e5ad2c66d50b74e",
+  "chapterTitles": {
+    "00-overview.md": "Overview",
+    "01-the-question-this-volume-answers.md": "The Question This Volume Answers",
+    "02-the-problem-running-a-database-is-a-full-time-job.md": "THE PROBLEM: Running a Database Is a Full-Time Job",
+    "03-the-mechanism-what-managed-actually-means.md": "THE MECHANISM: What Managed Actually Means",
+    "04-the-mechanism-multi-az-is-not-a-read-replica.md": "THE MECHANISM: Multi-AZ Is Not a Read Replica",
+    "05-the-mechanism-backups-and-the-restore-you-ll-do-once.md": "THE MECHANISM: Backups and the Restore You'll Do Once",
+    "06-part-two-aurora.md": "Part Two: Aurora",
+    "07-the-problem-databases-were-built-for-disks-that-don-t-exist-any-more.md": "THE PROBLEM: Databases Were Built for Disks That Don't Exist Any More",
+    "08-the-mechanism-the-log-is-the-database.md": "THE MECHANISM: The Log Is the Database",
+    "09-real-incident-the-failovers-nobody-drilled.md": "REAL INCIDENT: The Failovers Nobody Drilled",
+    "10-try-this-on-your-machine.md": "TRY THIS ON YOUR MACHINE",
+    "11-what-you-should-now-be-able-to-say.md": "What You Should Now Be Able To Say",
+    "12-where-we-go-next.md": "Where We Go Next"
+  }
+}

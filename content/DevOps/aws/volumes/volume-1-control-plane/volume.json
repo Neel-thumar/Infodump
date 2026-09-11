@@ -1,0 +1,25 @@
+{
+  "title": "Volume 1 — What AWS Actually Is: Accounts, Regions, and the API Underneath Everything",
+  "bookTitle": "Mastering AWS: The Engineering, The History, The Incidents",
+  "description": "Set up an AWS account safely, then dismantle the abstraction — what a Region really is, how every request is signed, and why the control plane / data plane split predicts every outage you'll ever live through.",
+  "id": "control-plane",
+  "order": 1,
+  "draft": false,
+  "access": {},
+  "thumbnail": null,
+  "sourceFilename": "volume-1-control-plane.md",
+  "sourceSha256": "60e6e04415c1595f6ddc6034918cce2f2bfdcfd5c861e26c94698d90d46680d8",
+  "chapterTitles": {
+    "00-overview.md": "Overview",
+    "01-the-question-this-volume-answers.md": "The Question This Volume Answers",
+    "02-setup-getting-an-account-without-getting-hurt.md": "Setup: Getting an Account Without Getting Hurt",
+    "03-the-problem-nobody-can-see-what-they-re-actually-doing.md": "THE PROBLEM: Nobody Can See What They're Actually Doing",
+    "04-the-mechanism-part-1-how-a-request-gets-signed.md": "THE MECHANISM, PART 1: How a Request Gets Signed",
+    "05-the-mechanism-part-2-where-where-actually-means.md": "THE MECHANISM, PART 2: Where \"Where\" Actually Means",
+    "06-the-mechanism-part-3-control-plane-vs-data-plane.md": "THE MECHANISM, PART 3: Control Plane vs. Data Plane",
+    "07-real-incident-december-7-2021.md": "REAL INCIDENT: December 7, 2021",
+    "08-try-this-on-your-machine.md": "TRY THIS ON YOUR MACHINE",
+    "09-what-you-should-now-be-able-to-say.md": "What You Should Now Be Able To Say",
+    "10-where-we-go-next.md": "Where We Go Next"
+  }
+}

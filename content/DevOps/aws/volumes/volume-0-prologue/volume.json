@@ -1,0 +1,24 @@
+{
+  "title": "Volume 0 — The Bookstore That Became the Internet's Landlord",
+  "bookTitle": "Mastering AWS: The Engineering, The History, The Incidents",
+  "description": "How a 2003 internal memo about fixing Amazon's own broken infrastructure accidentally created the cloud — and what you're about to learn that most AWS users never do.",
+  "id": "prologue",
+  "order": 0,
+  "draft": false,
+  "access": {},
+  "thumbnail": null,
+  "sourceFilename": "volume-0-prologue.md",
+  "sourceSha256": "f7b88f10dcd50347258d1b6ed8a699e56a2c50d66a7e02b0a49eefad6af6a581",
+  "chapterTitles": {
+    "00-overview.md": "Overview",
+    "01-a-question-before-we-start.md": "A Question Before We Start",
+    "02-the-surprising-fact.md": "The Surprising Fact",
+    "03-the-origin-story-told-honestly.md": "The Origin Story, Told Honestly",
+    "04-why-this-guide-leads-with-incidents.md": "Why This Guide Leads With Incidents",
+    "05-what-you-re-about-to-understand-that-most-aws-users-never-do.md": "What You're About to Understand That Most AWS Users Never Do",
+    "06-what-this-guide-is-not.md": "What This Guide Is Not",
+    "07-what-you-need-before-volume-1.md": "What You Need Before Volume 1",
+    "08-try-this-on-your-machine.md": "TRY THIS ON YOUR MACHINE",
+    "09-where-we-go-next.md": "Where We Go Next"
+  }
+}

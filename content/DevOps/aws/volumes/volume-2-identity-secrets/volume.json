@@ -1,0 +1,30 @@
+{
+  "title": "Volume 2 — Identity and Secrets: IAM, STS, KMS, Secrets Manager",
+  "bookTitle": "Mastering AWS: The Engineering, The History, The Incidents",
+  "description": "The policy evaluation algorithm AWS runs on every request, why roles beat access keys, and how envelope encryption actually works — anchored on the Capital One breach and the crypto-mining economy built on leaked keys.",
+  "id": "identity-secrets",
+  "order": 2,
+  "draft": false,
+  "access": {},
+  "thumbnail": null,
+  "sourceFilename": "volume-2-identity-secrets.md",
+  "sourceSha256": "93345b1d8ed7bf70fe8fa79ce481ceeee073a5e6a0728d2596ae23abc65c248b",
+  "chapterTitles": {
+    "00-overview.md": "Overview",
+    "01-the-question-this-volume-answers.md": "The Question This Volume Answers",
+    "02-part-one-iam.md": "Part One: IAM",
+    "03-the-problem-everything-is-a-shared-machine.md": "THE PROBLEM: Everything Is a Shared Machine",
+    "04-the-mechanism-the-pieces.md": "THE MECHANISM: The Pieces",
+    "05-the-mechanism-the-evaluation-algorithm.md": "THE MECHANISM: The Evaluation Algorithm",
+    "06-the-mechanism-roles-sts-and-getting-rid-of-keys.md": "THE MECHANISM: Roles, STS, and Getting Rid of Keys",
+    "07-real-incident-capital-one-2019.md": "REAL INCIDENT: Capital One, 2019",
+    "08-real-incident-the-access-key-mining-economy.md": "REAL INCIDENT: The Access Key Mining Economy",
+    "09-part-two-encryption.md": "Part Two: Encryption",
+    "10-the-problem-where-do-you-put-the-key.md": "THE PROBLEM: Where Do You Put the Key?",
+    "11-the-mechanism-envelope-encryption.md": "THE MECHANISM: Envelope Encryption",
+    "12-the-mechanism-secrets-manager-and-when-not-to-use-it.md": "THE MECHANISM: Secrets Manager, and When Not to Use It",
+    "13-try-this-on-your-machine.md": "TRY THIS ON YOUR MACHINE",
+    "14-what-you-should-now-be-able-to-say.md": "What You Should Now Be Able To Say",
+    "15-where-we-go-next.md": "Where We Go Next"
+  }
+}

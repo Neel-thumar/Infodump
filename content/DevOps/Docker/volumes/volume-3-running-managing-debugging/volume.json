@@ -1,0 +1,24 @@
+{
+  "title": "Volume 3 — Running, Managing, and Debugging Containers",
+  "bookTitle": "Mastering Docker: The Engineering, The History, The Incidents",
+  "description": "The container lifecycle at the process level, docker run flags taught by problem, real debugging technique, and making cgroup limits visible by triggering them on purpose.",
+  "id": "running-debugging-containers",
+  "order": 3,
+  "draft": false,
+  "access": {},
+  "thumbnail": null,
+  "sourceFilename": "volume-3-running-managing-debugging.md",
+  "sourceSha256": "fe64217c0e5a6ea416d791d4af2e67cdfbcb3dafb8f786ae651b11bb656ca6fb",
+  "chapterTitles": {
+    "00-overview.md": "Overview",
+    "01-the-question-this-volume-answers.md": "The question this volume answers",
+    "02-the-lifecycle-at-the-process-level.md": "The lifecycle, at the process level",
+    "03-docker-run-flags-taught-by-problem.md": "docker run flags, taught by problem",
+    "04-debugging-seeing-what-the-container-sees.md": "Debugging: seeing what the container sees",
+    "05-making-cgroups-visible.md": "Making cgroups visible",
+    "06-practical-networking.md": "Practical networking",
+    "07-the-incident-the-restart-loop-that-filled-the-disk.md": "The incident: the restart loop that filled the disk",
+    "08-try-this-on-your-machine.md": "TRY THIS ON YOUR MACHINE",
+    "09-where-this-leaves-you-and-what-s-next.md": "Where this leaves you, and what's next"
+  }
+}
