@@ -1,0 +1,7 @@
+{
+  "$comment": "Optional central overrides. Keys are physical category/course paths; volume keys omit volumes/ and .md. Relative image paths resolve from content/.",
+  "map": {},
+  "patterns": {},
+  "defaults": { "category": null, "course": null, "volume": null },
+  "inherit": true
+}

@@ -1,0 +1,24 @@
+{
+  "title": "Volume 2 — Users, Permissions, and Processes",
+  "bookTitle": "Mastering Debian Linux: The Engineering, The History, The Incidents",
+  "description": "",
+  "id": null,
+  "order": 2,
+  "draft": false,
+  "access": {},
+  "thumbnail": null,
+  "sourceFilename": "volume-2-users-permissions-processes.md",
+  "sourceSha256": "9525b02ad8f70f6944b4cb9bd920f0c3869413aabf4b6b6fc462107d04556743",
+  "chapterTitles": {
+    "00-overview.md": "Overview",
+    "01-chapter-8-why-your-laptop-pretends-to-be-a-1970s-mainframe.md": "Chapter 8 — Why Your Laptop Pretends to Be a 1970s Mainframe",
+    "02-chapter-9-etc-passwd-etc-shadow-and-the-password-that-wasn-t-secret.md": "Chapter 9 — /etc/passwd, /etc/shadow, and the Password That Wasn't Secret",
+    "03-chapter-10-nine-bits-derived.md": "Chapter 10 — Nine Bits, Derived",
+    "04-chapter-11-setuid-sudo-and-the-root-account-debian-turns-off.md": "Chapter 11 — setuid, sudo, and the Root Account Debian Turns Off",
+    "05-chapter-12-processes-signals-and-proc.md": "Chapter 12 — Processes, Signals, and /proc",
+    "06-chapter-13-the-incident-when-sudo-itself-was-the-hole.md": "Chapter 13 — The Incident: When sudo Itself Was the Hole",
+    "07-try-this-on-your-machine.md": "TRY THIS ON YOUR MACHINE",
+    "08-volume-2-retrospective.md": "Volume 2 Retrospective",
+    "09-volume-2-is-ready.md": "Volume 2 is ready"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "title": "Volume 2 — The Binary Tree Family",
+  "bookTitle": "Trees: A Complete Guide to the Data Structure, From First Principles to Production Systems",
+  "description": "",
+  "id": null,
+  "order": 2,
+  "draft": false,
+  "access": {},
+  "thumbnail": null,
+  "sourceFilename": "volume-2-binary-tree-family.md",
+  "sourceSha256": "0ebb92263fefdd8bc8bedc4e73c058e1089b2f329b1235b7c36957564ef88c6b",
+  "chapterTitles": {
+    "00-overview.md": "Overview",
+    "01-chapter-7-binary-trees-formally.md": "Chapter 7 — Binary Trees, Formally",
+    "02-chapter-8-the-binary-search-tree.md": "Chapter 8 — The Binary Search Tree",
+    "03-chapter-9-the-balance-catastrophe.md": "Chapter 9 — The Balance Catastrophe",
+    "04-chapter-10-avl-trees-enforce-balance-strictly.md": "Chapter 10 — AVL Trees: Enforce Balance Strictly",
+    "05-chapter-11-red-black-trees-enforce-balance-loosely.md": "Chapter 11 — Red-Black Trees: Enforce Balance Loosely",
+    "06-chapter-12-splay-trees-do-not-enforce-balance-repair-on-access.md": "Chapter 12 — Splay Trees: Do Not Enforce Balance; Repair On Access",
+    "07-chapter-13-treaps-do-not-enforce-balance-make-imbalance-improbable.md": "Chapter 13 — Treaps: Do Not Enforce Balance; Make Imbalance Improbable",
+    "08-chapter-14-comparison-and-what-this-volume-was-really-about.md": "Chapter 14 — Comparison, and What This Volume Was Really About",
+    "09-volume-2-is-complete.md": "Volume 2 is complete"
+  }
+}

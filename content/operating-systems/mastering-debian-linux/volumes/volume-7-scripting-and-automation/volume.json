@@ -1,0 +1,24 @@
+{
+  "title": "Volume 7 — Scripting and Automation",
+  "bookTitle": "Mastering Debian Linux: The Engineering, The History, The Incidents",
+  "description": "",
+  "id": null,
+  "order": 7,
+  "draft": false,
+  "access": {},
+  "thumbnail": null,
+  "sourceFilename": "volume-7-scripting-and-automation.md",
+  "sourceSha256": "8a064419c7c764b86e6d1dab7ec8263a39da57605df6779c72bc98b7318ada34",
+  "chapterTitles": {
+    "00-overview.md": "Overview",
+    "01-chapter-38-what-s-actually-worth-automating.md": "Chapter 38 — What's Actually Worth Automating",
+    "02-chapter-39-bash-derived-from-the-problem.md": "Chapter 39 — Bash, Derived From the Problem",
+    "03-chapter-40-set-euo-pipefail-derived.md": "Chapter 40 — set -euo pipefail, Derived",
+    "04-chapter-41-cron-and-the-things-it-cannot-do.md": "Chapter 41 — cron, and the Things It Cannot Do",
+    "05-chapter-42-systemd-timers.md": "Chapter 42 — systemd Timers",
+    "06-chapter-43-the-capstone-sysnap.md": "Chapter 43 — The Capstone: sysnap",
+    "07-try-this-on-your-machine.md": "TRY THIS ON YOUR MACHINE",
+    "08-volume-7-retrospective.md": "Volume 7 Retrospective",
+    "09-volume-7-is-ready.md": "Volume 7 is ready"
+  }
+}

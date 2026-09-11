@@ -1,0 +1,24 @@
+{
+  "title": "Volume 4 — Debian's Package Management, Specifically",
+  "bookTitle": "Mastering Debian Linux: The Engineering, The History, The Incidents",
+  "description": "",
+  "id": null,
+  "order": 4,
+  "draft": false,
+  "access": {},
+  "thumbnail": null,
+  "sourceFilename": "volume-4-package-management.md",
+  "sourceSha256": "5446d05f9bde5b44cf5d8d1ed6cb449e23be01e46ae74eaa2d48475bba2ec9e1",
+  "chapterTitles": {
+    "00-overview.md": "Overview",
+    "01-chapter-20-who-makes-your-operating-system-and-how-they-decide.md": "Chapter 20 — Who Makes Your Operating System, and How They Decide",
+    "02-chapter-21-dpkg-the-layer-that-installs-exactly-one-thing.md": "Chapter 21 — dpkg: The Layer That Installs Exactly One Thing",
+    "03-chapter-22-inside-a-deb.md": "Chapter 22 — Inside a .deb",
+    "04-chapter-23-apt-and-why-dependency-resolution-is-genuinely-hard.md": "Chapter 23 — apt, and Why Dependency Resolution Is Genuinely Hard",
+    "05-chapter-24-stable-testing-unstable-the-trade-off-you-chose.md": "Chapter 24 — Stable, Testing, Unstable: The Trade-off You Chose",
+    "06-chapter-25-the-incident-two-lines-twenty-months-every-key.md": "Chapter 25 — The Incident: Two Lines, Twenty Months, Every Key",
+    "07-try-this-on-your-machine.md": "TRY THIS ON YOUR MACHINE",
+    "08-volume-4-retrospective.md": "Volume 4 Retrospective",
+    "09-volume-4-is-ready.md": "Volume 4 is ready"
+  }
+}

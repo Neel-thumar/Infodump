@@ -1,0 +1,26 @@
+# dependencies
+node_modules/
+
+# next.js
+.next/
+out/
+build/
+dist/
+
+# testing
+test-results/
+playwright-report/
+.tmp/
+
+# env files
+.env
+.env*.local
+
+# vercel
+.vercel
+
+# misc
+.DS_Store
+*.log
+npm-debug.log*
+coverage/

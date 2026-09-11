@@ -1,0 +1,23 @@
+{
+  "title": "Volume 1 — Foundations",
+  "bookTitle": "Trees: A Complete Guide to the Data Structure, From First Principles to Production Systems",
+  "description": "",
+  "id": null,
+  "order": 1,
+  "draft": false,
+  "access": {},
+  "thumbnail": null,
+  "sourceFilename": "volume-1-foundations.md",
+  "sourceSha256": "3864802ae1170fd3bbd2391f8dacf0c2ec0cdbc1a12dec612807c4bf9b1faae6",
+  "chapterTitles": {
+    "00-overview.md": "Overview",
+    "01-chapter-1-the-tyranny-of-flat-space.md": "Chapter 1 — The Tyranny of Flat Space",
+    "02-chapter-2-where-hierarchies-came-from.md": "Chapter 2 — Where Hierarchies Came From",
+    "03-chapter-3-vocabulary-built-twice.md": "Chapter 3 — Vocabulary, Built Twice",
+    "04-chapter-4-traversal-four-orders-four-problems.md": "Chapter 4 — Traversal: Four Orders, Four Problems",
+    "05-chapter-5-recursion-the-stack-and-getting-rid-of-both.md": "Chapter 5 — Recursion, the Stack, and Getting Rid of Both",
+    "06-chapter-6-putting-trees-in-real-memory.md": "Chapter 6 — Putting Trees in Real Memory",
+    "07-volume-1-retrospective.md": "Volume 1 Retrospective",
+    "08-volume-1-is-complete.md": "Volume 1 is complete"
+  }
+}

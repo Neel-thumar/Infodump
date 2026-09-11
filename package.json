@@ -1,0 +1,36 @@
+{
+  "name": "infodump",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "next dev --hostname 127.0.0.1",
+    "build": "next build",
+    "start": "next start --hostname 127.0.0.1",
+    "seed": "node scripts/seed.mjs",
+    "chapters:plan": "node scripts/split-chapters.mjs",
+    "chapters:split": "node scripts/split-chapters.mjs --write",
+    "chapters:verify": "node scripts/verify-chapters.mjs",
+    "test": "node --test tests/*.test.js",
+    "test:e2e": "playwright test"
+  },
+  "dependencies": {
+    "next": "^16.0.0",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "gray-matter": "^4.0.3",
+    "unified": "^11.0.5",
+    "remark-parse": "^11.0.0",
+    "remark-gfm": "^4.0.1",
+    "remark-math": "^6.0.0",
+    "remark-rehype": "^11.1.2",
+    "rehype-katex": "^7.0.1",
+    "rehype-highlight": "^7.0.2",
+    "rehype-stringify": "^10.0.1",
+    "github-slugger": "^2.0.0",
+    "unist-util-visit": "^5.0.0",
+    "mdast-util-to-string": "^4.0.0",
+    "katex": "^0.16.22"
+  },
+  "devDependencies": { "@playwright/test": "^1.55.0" }
+}

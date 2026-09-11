@@ -1,0 +1,1 @@
+export default function NotFound() { return <main id="main" className="shell empty"><span>◇</span><h1>This chapter isn’t here.</h1><p>It may have moved, been removed, or be unavailable under the active policy.</p><a className="primary-button" href="/">Back to the library →</a></main>; }

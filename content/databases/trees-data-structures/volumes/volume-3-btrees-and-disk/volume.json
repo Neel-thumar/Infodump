@@ -1,0 +1,23 @@
+{
+  "title": "Volume 3 — Crossing the Memory Wall: B-Trees and Disk Structures",
+  "bookTitle": "Trees: A Complete Guide to the Data Structure, From First Principles to Production Systems",
+  "description": "",
+  "id": null,
+  "order": 3,
+  "draft": false,
+  "access": {},
+  "thumbnail": null,
+  "sourceFilename": "volume-3-btrees-and-disk.md",
+  "sourceSha256": "2dd301d548533e59fad1a5d0a41a5b7cc1fee41bb26e075672253fd3eb327663",
+  "chapterTitles": {
+    "00-overview.md": "Overview",
+    "01-chapter-15-the-physics-of-access.md": "Chapter 15 — The Physics of Access",
+    "02-chapter-16-bayer-and-mccreight-1972.md": "Chapter 16 — Bayer and McCreight, 1972",
+    "03-chapter-17-b-tree-mechanics.md": "Chapter 17 — B-Tree Mechanics",
+    "04-chapter-18-search-insert-delete.md": "Chapter 18 — Search, Insert, Delete",
+    "05-chapter-19-b-trees-push-the-data-to-the-leaves.md": "Chapter 19 — B+-Trees: Push the Data to the Leaves",
+    "06-chapter-20-the-design-space-b-bε-and-the-lsm-lineage.md": "Chapter 20 — The Design Space: B*, Bε, and the LSM Lineage",
+    "07-volume-3-retrospective.md": "Volume 3 Retrospective",
+    "08-volume-3-is-complete.md": "Volume 3 is complete"
+  }
+}

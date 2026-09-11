@@ -1,0 +1,20 @@
+{
+  "title": "Volume 9 — Epilogue: Where This Goes From Here",
+  "bookTitle": "Mastering Debian Linux: The Engineering, The History, The Incidents",
+  "description": "",
+  "id": null,
+  "order": 9,
+  "draft": false,
+  "access": {},
+  "thumbnail": null,
+  "sourceFilename": "volume-9-epilogue.md",
+  "sourceSha256": "f8ad71edb0bd1aa4e633d7a374a57bab1c4b9cd2ef885344fe2e28a0f9783268",
+  "chapterTitles": {
+    "00-overview.md": "Overview",
+    "01-1-where-linux-actually-runs.md": "1. Where Linux Actually Runs",
+    "02-2-where-it-s-headed.md": "2. Where It's Headed",
+    "03-3-what-this-opens-up.md": "3. What This Opens Up",
+    "04-4-where-to-go-next-by-what-you-liked.md": "4. Where to Go Next, By What You Liked",
+    "05-5-the-long-view.md": "5. The Long View"
+  }
+}

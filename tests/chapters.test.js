@@ -1,0 +1,51 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import fs from 'node:fs/promises';
+import path from 'node:path';
+import os from 'node:os';
+import { runSplit } from '../scripts/split-chapters.mjs';
+import { write } from './fixtures.js';
+import { scanLibrary, loadVolume, searchLibrary, publicLibrary } from '../src/lib/content.js';
+import { getViewer } from '../src/lib/access/viewer.js';
+
+test('chapter folders preserve identities, scope previews, search and dynamically discover edits', async () => {
+  const root = await fs.mkdtemp(path.join(os.tmpdir(), 'infodump-chapters-'));
+  const viewer = getViewer();
+  process.env.CONTENT_ROOT = root;
+  const raw = '# Book\n\n## Volume 1 — A volume\n\nWelcome\n\n# Chapter 1 — First\n\n## First section\n[reference][ref]\n\n## Second section\n```bash\ncat /proc/$$/environ\n```\n\n# Chapter 2 — Second\n\n## Hidden section\nWITHHELD_CHAPTER_SECRET\n\n[ref]: https://example.com\n';
+  try {
+    await write(root, 'cat/course/volumes/volume-1-book.md', raw);
+    const before = await scanLibrary(viewer);
+    const id = before.categories[0].courses[0].volumes[0].resource.id;
+    await runSplit(root, true);
+    let library = await scanLibrary(viewer), course = library.categories[0].courses[0], volume = course.volumes[0];
+    assert.equal(volume.resource.id, id);
+    assert.equal(volume.title, 'Volume 1 — A volume');
+    assert.equal(volume.chapters.length, 3);
+    assert.equal(volume.chapters[1].title, 'Chapter 1 — First');
+    const read = await loadVolume(viewer, course, volume, volume.chapters[1].slug);
+    assert.ok(read.html.includes('/proc/$$/environ'));
+    assert.ok(read.html.includes('href="https://example.com"'));
+    assert.ok(!read.html.includes('WITHHELD_CHAPTER_SECRET'));
+    assert.equal(read.previous.title, 'Overview');
+    assert.equal(read.next.title, 'Chapter 2 — Second');
+    assert.equal((await loadVolume(viewer, course, volume, volume.chapters[0].slug)).previous, null);
+    assert.equal((await loadVolume(viewer, course, volume, volume.chapters[2].slug)).next, null);
+    const search = await searchLibrary(viewer, 'WITHHELD_CHAPTER_SECRET');
+    assert.equal(search.results[0].kind, 'Chapter');
+    assert.equal(search.results[0].url, volume.chapters[2].url);
+    assert.ok(!JSON.stringify(publicLibrary(library)).includes('WITHHELD_CHAPTER_SECRET'));
+    process.env.ACCESS_MODE = 'policy'; process.env.ACCESS_POLICY = 'demo';
+    library = await scanLibrary(viewer); course = library.categories[0].courses[0]; volume = course.volumes[0];
+    assert.equal(volume.chapters.length, 2);
+    assert.equal((await searchLibrary(viewer, 'WITHHELD_CHAPTER_SECRET')).results.length, 0);
+    const preview = await loadVolume(viewer, course, volume, volume.chapters[1].slug);
+    assert.ok(preview.preview); assert.ok(!preview.html.includes('WITHHELD_CHAPTER_SECRET'));
+    delete process.env.ACCESS_MODE; delete process.env.ACCESS_POLICY;
+    await write(root, 'cat/course/volumes/volume-1-book/chapters/20-added.md', '# A new chapter\n\nADDED_HOT');
+    library = await scanLibrary(viewer);
+    assert.equal(library.categories[0].courses[0].volumes[0].chapters.length, 4);
+    assert.equal((await searchLibrary(viewer, 'ADDED_HOT')).results.length, 1);
+    assert.equal(await fs.readFile(path.join(root, 'cat/course/volumes/.originals/volume-1-book.md'), 'utf8'), raw);
+  } finally { delete process.env.CONTENT_ROOT; delete process.env.ACCESS_MODE; delete process.env.ACCESS_POLICY; await fs.rm(root, { recursive: true, force: true }); }
+});

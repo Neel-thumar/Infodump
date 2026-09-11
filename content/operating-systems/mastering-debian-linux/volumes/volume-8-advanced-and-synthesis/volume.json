@@ -1,0 +1,25 @@
+{
+  "title": "Volume 8 — Advanced Deep Dives, and the Synthesis",
+  "bookTitle": "Mastering Debian Linux: The Engineering, The History, The Incidents",
+  "description": "",
+  "id": null,
+  "order": 8,
+  "draft": false,
+  "access": {},
+  "thumbnail": null,
+  "sourceFilename": "volume-8-advanced-and-synthesis.md",
+  "sourceSha256": "9c0dd0c31e0408d0e933bc3e3a66e0453a7e274d44b5f597c6e70b141ca33711",
+  "chapterTitles": {
+    "00-overview.md": "Overview",
+    "01-chapter-44-the-syscall-where-your-program-ends-and-the-kernel-begins.md": "Chapter 44 — The Syscall: Where Your Program Ends and the Kernel Begins",
+    "02-chapter-45-kernel-modules.md": "Chapter 45 — Kernel Modules",
+    "03-chapter-46-containers-from-scratch.md": "Chapter 46 — Containers, From Scratch",
+    "04-chapter-47-compiling-your-own-kernel.md": "Chapter 47 — Compiling Your Own Kernel",
+    "05-chapter-48-firewalls-nftables-and-why-debian-moved.md": "Chapter 48 — Firewalls: nftables, and Why Debian Moved",
+    "06-chapter-49-the-synthesis-one-command-eight-volumes.md": "Chapter 49 — The Synthesis: One Command, Eight Volumes",
+    "07-chapter-50-rabbit-holes-worth-falling-into.md": "Chapter 50 — Rabbit Holes Worth Falling Into",
+    "08-try-this-on-your-machine.md": "TRY THIS ON YOUR MACHINE",
+    "09-volume-8-retrospective.md": "Volume 8 Retrospective",
+    "10-the-book-is-finished.md": "The Book Is Finished"
+  }
+}

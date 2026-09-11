@@ -1,0 +1,24 @@
+{
+  "title": "Volume 6 — The Boot Process, Deeply",
+  "bookTitle": "Mastering Debian Linux: The Engineering, The History, The Incidents",
+  "description": "",
+  "id": null,
+  "order": 6,
+  "draft": false,
+  "access": {},
+  "thumbnail": null,
+  "sourceFilename": "volume-6-the-boot-process.md",
+  "sourceSha256": "10db280d390bd5d7374ae2ecbe465f4ee9ec9e2806d854cea11bec8fcc5e6500",
+  "chapterTitles": {
+    "00-overview.md": "Overview",
+    "01-chapter-32-power-on-where-the-first-instruction-comes-from.md": "Chapter 32 — Power On: Where the First Instruction Comes From",
+    "02-chapter-33-grub-the-program-that-runs-before-anything-exists.md": "Chapter 33 — GRUB: The Program That Runs Before Anything Exists",
+    "03-chapter-34-the-kernel-and-the-initramfs.md": "Chapter 34 — The Kernel and the initramfs",
+    "04-chapter-35-luks-the-lock-whose-key-can-t-be-inside-the-box.md": "Chapter 35 — LUKS: The Lock Whose Key Can't Be Inside the Box",
+    "05-chapter-36-systemd-the-problem-it-was-built-to-solve.md": "Chapter 36 — systemd: The Problem It Was Built to Solve",
+    "06-chapter-37-the-systemd-argument-honestly.md": "Chapter 37 — The systemd Argument, Honestly",
+    "07-try-this-on-your-machine.md": "TRY THIS ON YOUR MACHINE",
+    "08-volume-6-retrospective.md": "Volume 6 Retrospective",
+    "09-volume-6-is-ready.md": "Volume 6 is ready"
+  }
+}

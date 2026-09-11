@@ -1,0 +1,25 @@
+{
+  "title": "Volume 1 — The Shell, and What a Computer Actually Does When You Type",
+  "bookTitle": "Mastering Debian Linux: The Engineering, The History, The Incidents",
+  "description": "",
+  "id": null,
+  "order": 1,
+  "draft": false,
+  "access": {},
+  "thumbnail": null,
+  "sourceFilename": "volume-1-the-shell.md",
+  "sourceSha256": "57354c37392240198c16674a8229f765acc267cd0ab81015bcf421fc1a153cf5",
+  "chapterTitles": {
+    "00-overview.md": "Overview",
+    "01-chapter-1-why-there-is-a-shell-at-all.md": "Chapter 1 — Why There Is a Shell At All",
+    "02-chapter-2-from-keystroke-to-output-step-by-step.md": "Chapter 2 — From Keystroke to Output, Step by Step",
+    "03-chapter-3-moving-around-and-moving-things.md": "Chapter 3 — Moving Around and Moving Things",
+    "04-chapter-4-reading-files-and-why-less-is-called-that.md": "Chapter 4 — Reading Files, and Why less Is Called That",
+    "05-chapter-5-getting-help-the-debian-way.md": "Chapter 5 — Getting Help, the Debian Way",
+    "06-chapter-6-environment-bashrc-and-what-path-really-does.md": "Chapter 6 — Environment, .bashrc, and What $PATH Really Does",
+    "07-chapter-7-the-incident-shellshock.md": "Chapter 7 — The Incident: Shellshock",
+    "08-try-this-on-your-machine.md": "TRY THIS ON YOUR MACHINE",
+    "09-volume-1-retrospective.md": "Volume 1 Retrospective",
+    "10-volume-1-is-ready.md": "Volume 1 is ready"
+  }
+}

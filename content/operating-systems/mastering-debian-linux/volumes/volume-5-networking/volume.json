@@ -1,0 +1,24 @@
+{
+  "title": "Volume 5 — Networking",
+  "bookTitle": "Mastering Debian Linux: The Engineering, The History, The Incidents",
+  "description": "",
+  "id": null,
+  "order": 5,
+  "draft": false,
+  "access": {},
+  "thumbnail": null,
+  "sourceFilename": "volume-5-networking.md",
+  "sourceSha256": "8f9240b1b4311570ca3a0d387471050ec8fc407df0222f8779626cf9ef6f80f4",
+  "chapterTitles": {
+    "00-overview.md": "Overview",
+    "01-chapter-26-addresses-and-why-you-have-several.md": "Chapter 26 — Addresses, and Why You Have Several",
+    "02-chapter-27-dns-how-thirteen-addresses-serve-the-whole-internet.md": "Chapter 27 — DNS: How Thirteen Addresses Serve the Whole Internet",
+    "03-chapter-28-the-full-trace-one-url-ten-steps.md": "Chapter 28 — The Full Trace: One URL, Ten Steps",
+    "04-chapter-29-sockets-and-ports-at-the-kernel-level.md": "Chapter 29 — Sockets and Ports, at the Kernel Level",
+    "05-chapter-30-ssh-cryptography-you-can-actually-look-at.md": "Chapter 30 — SSH: Cryptography You Can Actually Look At",
+    "06-chapter-31-the-incident-in-three-acts.md": "Chapter 31 — The Incident, in Three Acts",
+    "07-try-this-on-your-machine.md": "TRY THIS ON YOUR MACHINE",
+    "08-volume-5-retrospective.md": "Volume 5 Retrospective",
+    "09-volume-5-is-ready.md": "Volume 5 is ready"
+  }
+}

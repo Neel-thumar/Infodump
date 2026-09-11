@@ -1,0 +1,24 @@
+{
+  "title": "Volume 3 — The Filesystem, Deeply",
+  "bookTitle": "Mastering Debian Linux: The Engineering, The History, The Incidents",
+  "description": "",
+  "id": null,
+  "order": 3,
+  "draft": false,
+  "access": {},
+  "thumbnail": null,
+  "sourceFilename": "volume-3-the-filesystem.md",
+  "sourceSha256": "0f87ea2b3216f3042155cd2c9c520ab3905d722894a3b5f8db91a03387d35ed7",
+  "chapterTitles": {
+    "00-overview.md": "Overview",
+    "01-chapter-14-everything-is-a-file-and-where-that-stops-being-true.md": "Chapter 14 — \"Everything Is a File,\" and Where That Stops Being True",
+    "02-chapter-15-inodes-the-file-that-has-no-name.md": "Chapter 15 — Inodes: The File That Has No Name",
+    "03-chapter-16-the-hierarchy-and-a-story-i-promised-to-check.md": "Chapter 16 — The Hierarchy, and a Story I Promised to Check",
+    "04-chapter-17-disks-partitions-and-mounting-your-install-explained.md": "Chapter 17 — Disks, Partitions, and Mounting: Your Install, Explained",
+    "05-chapter-18-file-descriptors-streams-and-redirection.md": "Chapter 18 — File Descriptors, Streams, and Redirection",
+    "06-chapter-19-the-incident-when-write-didn-t-mean-written.md": "Chapter 19 — The Incident: When write() Didn't Mean Written",
+    "07-try-this-on-your-machine.md": "TRY THIS ON YOUR MACHINE",
+    "08-volume-3-retrospective.md": "Volume 3 Retrospective",
+    "09-volume-3-is-ready.md": "Volume 3 is ready"
+  }
+}

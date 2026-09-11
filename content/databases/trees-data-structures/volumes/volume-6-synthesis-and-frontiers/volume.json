@@ -1,0 +1,27 @@
+{
+  "title": "Volume 6 — Synthesis, Real-World Map, and Open Frontiers",
+  "bookTitle": "Trees: A Complete Guide to the Data Structure, From First Principles to Production Systems",
+  "description": "",
+  "id": null,
+  "order": 6,
+  "draft": false,
+  "access": {},
+  "thumbnail": null,
+  "sourceFilename": "volume-6-synthesis-and-frontiers.md",
+  "sourceSha256": "9ea2a09489fb95f14351bfc2fe09268ec4c4f29677110f9c890bc750a045311b",
+  "chapterTitles": {
+    "00-overview.md": "Overview",
+    "01-chapter-36-one-question-five-volumes.md": "Chapter 36 — One Question, Five Volumes",
+    "02-chapter-37-the-hierarchy-recreates-itself.md": "Chapter 37 — The Hierarchy Recreates Itself",
+    "03-chapter-38-the-map-where-trees-actually-run.md": "Chapter 38 — The Map: Where Trees Actually Run",
+    "04-chapter-39-open-frontiers.md": "Chapter 39 — Open Frontiers",
+    "05-chapter-40-a-cabinet-of-curiosities.md": "Chapter 40 — A Cabinet of Curiosities",
+    "06-volume-6-retrospective.md": "Volume 6 Retrospective",
+    "07-the-book-in-one-page.md": "The Book, In One Page",
+    "08-six-things-worth-keeping.md": "Six Things Worth Keeping",
+    "09-what-this-book-did-not-cover.md": "What This Book Did Not Cover",
+    "10-where-to-go-next.md": "Where To Go Next",
+    "11-a-closing-note.md": "A Closing Note",
+    "12-the-book-is-complete.md": "The book is complete"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "title": "Volume 0 — Prologue: Why This Operating System Is Worth Obsessing Over",
+  "bookTitle": "Mastering Debian Linux: The Engineering, The History, The Incidents",
+  "description": "",
+  "id": null,
+  "order": 0,
+  "draft": false,
+  "access": {},
+  "thumbnail": null,
+  "sourceFilename": "volume-0-prologue.md",
+  "sourceSha256": "f65e446d51df18d92766798f4639bcc6a7a2f41c16187c4fbb5dbd7aed1949f8",
+  "chapterTitles": {
+    "00-overview.md": "Overview",
+    "01-the-name-was-an-accident.md": "The name was an accident",
+    "02-the-argument-at-the-centre-of-it.md": "The argument at the centre of it",
+    "03-just-a-hobby.md": "\"Just a hobby\"",
+    "04-and-then-there-s-debian.md": "And then there's Debian",
+    "05-five-things-you-re-about-to-understand.md": "Five things you're about to understand",
+    "06-one-more-thing-about-method.md": "One more thing, about method",
+    "07-go.md": "Go"
+  }
+}

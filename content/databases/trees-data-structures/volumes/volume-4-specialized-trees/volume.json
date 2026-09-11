@@ -1,0 +1,26 @@
+{
+  "title": "Volume 4 — Specialized Trees, Each Solving a Problem Plain Trees Can't",
+  "bookTitle": "Trees: A Complete Guide to the Data Structure, From First Principles to Production Systems",
+  "description": "",
+  "id": null,
+  "order": 4,
+  "draft": false,
+  "access": {},
+  "thumbnail": null,
+  "sourceFilename": "volume-4-specialized-trees.md",
+  "sourceSha256": "1097c673346b20b461018c2f77009778f97fdc0b2cee01a9c232dd975a64c671",
+  "chapterTitles": {
+    "00-overview.md": "Overview",
+    "01-chapter-21-tries-stop-comparing-whole-keys.md": "Chapter 21 — Tries: Stop Comparing Whole Keys",
+    "02-chapter-22-segment-trees-and-fenwick-trees-hierarchical-aggregates.md": "Chapter 22 — Segment Trees and Fenwick Trees: Hierarchical Aggregates",
+    "03-chapter-23-interval-trees-when-the-data-are-ranges.md": "Chapter 23 — Interval Trees: When the Data Are Ranges",
+    "04-chapter-24-heaps-the-point-of-knowing-less.md": "Chapter 24 — Heaps: The Point of Knowing Less",
+    "05-chapter-25-spatial-trees-when-there-is-no-total-order.md": "Chapter 25 — Spatial Trees: When There Is No Total Order",
+    "06-chapter-26-suffix-trees-and-suffix-arrays-indexing-every-position.md": "Chapter 26 — Suffix Trees and Suffix Arrays: Indexing Every Position",
+    "07-chapter-27-merkle-trees-verification-instead-of-retrieval.md": "Chapter 27 — Merkle Trees: Verification Instead of Retrieval",
+    "08-chapter-28-decision-trees-a-different-lineage-entirely.md": "Chapter 28 — Decision Trees: A Different Lineage Entirely",
+    "09-chapter-29-synthesis-the-tree-as-a-summary-machine.md": "Chapter 29 — Synthesis: The Tree as a Summary Machine",
+    "10-volume-4-retrospective.md": "Volume 4 Retrospective",
+    "11-volume-4-is-complete.md": "Volume 4 is complete"
+  }
+}

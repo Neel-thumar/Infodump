@@ -1,0 +1,2 @@
+'use client';
+export default function ErrorPage({ reset }) { return <main id="main" className="shell empty"><h1>Something interrupted your reading.</h1><p>Check the content files and server log, then try again.</p><button className="primary-button" onClick={reset}>Try again</button><a href="/">Back to library</a></main>; }

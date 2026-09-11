@@ -1,0 +1,23 @@
+{
+  "title": "Volume 5 — Concurrency, Crash Safety, and Production Engineering",
+  "bookTitle": "Trees: A Complete Guide to the Data Structure, From First Principles to Production Systems",
+  "description": "",
+  "id": null,
+  "order": 5,
+  "draft": false,
+  "access": {},
+  "thumbnail": null,
+  "sourceFilename": "volume-5-concurrency-and-durability.md",
+  "sourceSha256": "5698b21826675f32eabee9a1edb98233c23475d65d7a4921099cf3b3967ec687",
+  "chapterTitles": {
+    "00-overview.md": "Overview",
+    "01-chapter-30-the-concurrency-problem.md": "Chapter 30 — The Concurrency Problem",
+    "02-chapter-31-lehman-and-yao-the-b-link-tree.md": "Chapter 31 — Lehman and Yao: The B-link Tree",
+    "03-chapter-32-crash-safety.md": "Chapter 32 — Crash Safety",
+    "04-chapter-33-maintenance-why-trees-only-grow.md": "Chapter 33 — Maintenance: Why Trees Only Grow",
+    "05-chapter-34-immutable-trees-and-structural-sharing.md": "Chapter 34 — Immutable Trees and Structural Sharing",
+    "06-chapter-35-the-three-pressures-and-why-they-fight.md": "Chapter 35 — The Three Pressures, and Why They Fight",
+    "07-volume-5-retrospective.md": "Volume 5 Retrospective",
+    "08-volume-5-is-complete.md": "Volume 5 is complete"
+  }
+}
