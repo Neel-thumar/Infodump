@@ -8,18 +8,20 @@ const root = path.resolve('.tmp/browser-open');
 test('infodump branding and fullscreen focus mode hide chrome and restore the reader', async ({ page }) => {
   await page.goto('/c/a-os/linux/volume-0-chapter');
   await expect(page).toHaveTitle('infodump · Your local learning library');
-  await expect(page.locator('.brand')).toContainText('infodump');
+  // Reading a volume merges the site header into the reader toolbar, so only that one bar is on screen.
+  await expect(page.locator('.toolbar-brand')).toContainText('infodump');
+  await expect(page.locator('.topbar')).toBeHidden();
   await page.getByRole('button', { name: 'Enter focus mode' }).click();
   await expect(page.locator('body')).toHaveAttribute('data-reading-focus', '');
   await expect(page.locator('.prose')).toBeVisible();
-  for (const selector of ['.topbar', '.volume-sidebar', '.breadcrumbs', '.volume-header', '.toc', '.reading-meter', '.volume-pagination']) {
+  for (const selector of ['.topbar', '.reader-toolbar', '.volume-sidebar', '.breadcrumbs', '.volume-header', '.toc', '.reading-meter', '.volume-pagination']) {
     await expect(page.locator(selector)).toBeHidden();
   }
   await expect.poll(() => page.evaluate(() => !!document.fullscreenElement)).toBe(true);
   expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
   await page.getByRole('button', { name: 'Exit focus mode' }).click();
   await expect(page.locator('body')).not.toHaveAttribute('data-reading-focus');
-  await expect(page.locator('.topbar')).toBeVisible();
+  await expect(page.locator('.reader-toolbar')).toBeVisible();
   await expect.poll(() => page.evaluate(() => !!document.fullscreenElement)).toBe(false);
 
   // Unsupported/fullscreen-denied browsers still get a full-viewport, keyboard-exitable reader.
@@ -27,10 +29,10 @@ test('infodump branding and fullscreen focus mode hide chrome and restore the re
   await page.setViewportSize({ width: 390, height: 844 });
   await page.getByRole('button', { name: 'Enter focus mode' }).click();
   await expect(page.locator('.prose')).toBeVisible();
-  await expect(page.locator('.drawer-toggle')).toBeHidden();
+  await expect(page.locator('.reader-toolbar')).toBeHidden();
   expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
   await page.keyboard.press('Escape');
-  await expect(page.locator('.topbar')).toBeVisible();
+  await expect(page.locator('.reader-toolbar')).toBeVisible();
   await expect(page.locator('body')).not.toHaveAttribute('data-reading-focus');
 });
 
@@ -71,7 +73,7 @@ test('rendered math, literal code, anchors, long-line overflow and mobile drawer
   await page.setViewportSize({ width: 390, height: 844 });
   await checkWidth();
   await expect(page.locator('#volume-sidebar')).toBeHidden();
-  await page.getByRole('button', { name: '☰ Volumes' }).click();
+  await page.getByRole('button', { name: 'Toggle course navigation' }).click();
   await expect(page.getByRole('dialog', { name: 'Volume navigation' })).toBeVisible();
   await page.keyboard.press('Escape');
   await expect(page.locator('#volume-sidebar')).toBeHidden();
@@ -162,11 +164,13 @@ test('demo: network responses contain no locked or preview-withheld text, hidden
 
 test('chapter navigation, keyboard guards, reading controls and chapter completion', async ({ page }) => {
   const chapterRoot = path.join(root, 'reader-test');
-  await write(chapterRoot, 'course/volumes/volume-1-reading.md', '# Reader Book\n\n## Volume 1 — Reading\n\nOverview text.\n\n# Chapter 1 — First\n\n## Details\n' + 'Readable text. '.repeat(700) + '\n\n```bash\necho readable\n```\n\n# Chapter 2 — Second\n\n## More\nSecond chapter only.');
+  await write(chapterRoot, 'course/volumes/volume-1-reading.md', '# Reader Book\n\n## Volume 1 — Reading\n\nOverview text.\n\n# Chapter 1 — First\n\n## Details\n' + 'Readable text. '.repeat(700) + '\n\n```bash\necho readable\n```\n\n## Caveats\n\nOne more section, so this chapter earns an outline.\n\n# Chapter 2 — Second\n\n## More\nSecond chapter only.');
   await runSplit(chapterRoot, true);
   await page.goto('/c/reader-test/course/volume-1-reading');
   await expect(page).toHaveURL(/\/00-overview$/);
   await expect(page.getByRole('combobox', { name: 'Go to chapter' })).toBeVisible();
+  // A single-heading chapter gets no outline column; it would only repeat the page title.
+  await expect(page.locator('.toc')).toBeHidden();
   await page.locator('.complete-button').click();
   await page.locator('body').click({ position: { x: 400, y: 400 } });
   await page.keyboard.press('ArrowRight');
@@ -184,7 +188,7 @@ test('chapter navigation, keyboard guards, reading controls and chapter completi
   await page.getByRole('combobox', { name: 'Reading width' }).selectOption('full');
   await page.getByRole('slider', { name: 'Text size' }).fill('23');
   await page.getByLabel('Site header', { exact: true }).uncheck();
-  await expect(page.locator('.topbar')).toBeHidden();
+  await expect(page.locator('.toolbar-brand')).toBeHidden();
   await page.keyboard.press('Escape');
   await expect(page.locator('.prose')).toHaveCSS('font-size', '23px');
   await page.locator('.reader-settings summary').click();
@@ -195,14 +199,14 @@ test('chapter navigation, keyboard guards, reading controls and chapter completi
   await page.keyboard.press('Escape');
   await page.reload();
   await expect(page.locator('.volume-sidebar')).toBeHidden();
-  await expect(page.locator('.topbar')).toBeHidden();
+  await expect(page.locator('.toolbar-brand')).toBeHidden();
   await expect(page.locator('.prose')).toHaveCSS('font-size', '23px');
   expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
   await page.locator('.reader-settings summary').click();
   await page.getByRole('button', { name: 'Reset', exact: true }).click();
   await page.keyboard.press('Escape');
   await expect(page.locator('.volume-sidebar')).toBeVisible();
-  await expect(page.locator('.topbar')).toBeVisible();
+  await expect(page.locator('.toolbar-brand')).toBeVisible();
   // Focusing the code near the end may already have auto-completed this long chapter.
   if ((await page.locator('.complete-button').textContent()).includes('Mark as complete')) await page.locator('.complete-button').click();
   await expect(page.locator('.complete-button')).toContainText('Completed');

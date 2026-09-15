@@ -55,7 +55,7 @@ export function ClientState({ viewer, children }) {
   </State.Provider>;
 }
 
-export function Header() {
+export function ThemeToggle({ className = '' }) {
   const { viewer } = useReading();
   const [dark, setDark] = useState(false);
   useEffect(() => {
@@ -67,11 +67,15 @@ export function Header() {
     media.addEventListener('change', system);
     return () => { observer.disconnect(); media.removeEventListener('change', system); };
   }, [viewer.id]);
+  return <button className={`theme-toggle ${className}`} aria-label="Toggle color theme" onClick={() => {
+    const next = document.documentElement.dataset.theme === 'dark' ? 'light' : 'dark';
+    document.documentElement.dataset.theme = next; setDark(next === 'dark');
+    try { localStorage.setItem(`${statePrefix(viewer.id)}theme`, next); } catch { /* Nonpersistent theme. */ }
+  }}>{dark ? '☀' : '☾'}<span className="sr-only">Toggle theme</span></button>;
+}
+
+export function Header() {
   return <header className="topbar"><a className="brand" href="/"><span className="brand-mark">i.</span> infodump<span className="brand-caption"> / YOUR LOCAL LIBRARY</span></a>
-    <nav aria-label="Main"><a href="/all">All courses</a><button className="theme-toggle" aria-label="Toggle color theme" onClick={() => {
-      const next = document.documentElement.dataset.theme === 'dark' ? 'light' : 'dark';
-      document.documentElement.dataset.theme = next; setDark(next === 'dark');
-      try { localStorage.setItem(`${statePrefix(viewer.id)}theme`, next); } catch { /* Nonpersistent theme. */ }
-    }}>{dark ? '☀' : '☾'}<span className="sr-only">Toggle theme</span></button></nav>
+    <nav aria-label="Main"><a href="/all">All courses</a><ThemeToggle /></nav>
   </header>;
 }

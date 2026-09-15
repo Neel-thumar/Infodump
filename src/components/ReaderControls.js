@@ -1,7 +1,7 @@
 'use client';
 import { useEffect } from 'react';
 import { statePrefix } from '../lib/state.js';
-import { useReading } from './ClientState.js';
+import { ThemeToggle, useReading } from './ClientState.js';
 
 export const defaultPreferences = { sidebar: true, toc: true, header: true, breadcrumbs: true, title: true, progress: true, footer: true, toolbar: true, fontSize: 19, width: 'wide' };
 export function useReaderPreferences() {
@@ -15,7 +15,7 @@ export function useReaderPreferences() {
   return { preferences, setPreference, reset: () => save(key, defaultPreferences) };
 }
 
-export default function ReaderControls({ volume, chapter, rendered, preferences, setPreference, reset, onMenu }) {
+export default function ReaderControls({ volume, chapter, rendered, preferences, setPreference, reset, onMenu, menuRef, drawerOpen }) {
   useEffect(() => {
     const closeOutside = event => {
       const settings = document.querySelector('.reader-settings[open]');
@@ -33,7 +33,8 @@ export default function ReaderControls({ volume, chapter, rendered, preferences,
     return () => { document.removeEventListener('keydown', onKey); document.removeEventListener('pointerdown', closeOutside); };
   }, [rendered?.previous, rendered?.next]);
   return <div className="reader-toolbar" role="region" aria-label="Reading controls">
-    <button className="panels-button" onClick={onMenu} title="Toggle course navigation" aria-label="Toggle course navigation" aria-pressed={preferences.sidebar}>☰</button>
+    {preferences.header && <a className="brand toolbar-brand" href="/" aria-label="infodump home"><span className="brand-mark" aria-hidden="true">i.</span><span className="brand-word">infodump</span></a>}
+    <button ref={menuRef} className="panels-button" onClick={onMenu} title="Toggle course navigation" aria-label="Toggle course navigation" aria-controls="volume-sidebar" aria-expanded={drawerOpen || preferences.sidebar}>☰</button>
     <div className="chapter-switcher">
       {rendered?.previous ? <a className="step-button" href={rendered.previous.url} aria-label={chapter ? 'Previous chapter' : 'Previous volume'} title="Previous · Left arrow">←</a> : <button className="step-button" aria-label="Previous chapter" disabled>←</button>}
       {chapter ? <label className="chapter-select"><span className="sr-only">Go to chapter</span><select aria-label="Go to chapter" value={chapter.url} onChange={e => window.location.assign(e.target.value)}>{volume.chapters.map((ch, i) => <option key={ch.id} value={ch.url}>{i + 1} / {volume.chapters.length} · {ch.title}</option>)}</select></label> : <span className="toolbar-title">{volume ? 'Volume reader' : 'Course overview'}</span>}
@@ -48,5 +49,6 @@ export default function ReaderControls({ volume, chapter, rendered, preferences,
         <p>← → Change chapters · Esc exits focus mode.<br />Arrow shortcuts pause while using inputs or scrolling code.</p>
       </div>
     </details>
+    {preferences.header && <ThemeToggle />}
   </div>;
 }

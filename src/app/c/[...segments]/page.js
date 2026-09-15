@@ -20,5 +20,5 @@ export default async function ContentPage({ params }) {
   if (segments.length === 4 && !volume.chapters.some(ch => ch.slug === segments[3])) notFound();
   if (segments.length === 3 && volume?.chapters.length) redirect(volume.chapters[0].url);
   const rendered = volume ? await loadVolume(viewer, course, volume, segments[3]) : null;
-  return <Reader key={segments.join('/')} category={{ ...publicCategory, courses: undefined }} course={publicCourse} volume={publicCourse.volumes.find(v => v.slug === segments[2]) || null} rendered={rendered} warnings={exposed.warnings} />;
+  return <Reader key={segments.join('/')} category={{ ...publicCategory, courses: undefined }} course={publicCourse} volume={publicCourse.volumes.find(v => v.slug === segments[2]) || null} rendered={rendered} />;
 }

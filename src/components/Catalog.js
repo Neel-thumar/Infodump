@@ -22,6 +22,7 @@ export function Progress({ courses }) {
 export function Breadcrumbs({ nodes = [] }) {
   return <nav className="breadcrumbs" aria-label="Breadcrumb"><a href="/">Home</a>{nodes.map((node, i) => <span key={node.url}> <span aria-hidden="true">/</span> {i === nodes.length - 1 ? <span aria-current="page">{node.title}</span> : <a href={node.url}>{node.title}</a>}</span>)}</nav>;
 }
+// Library-level authoring diagnostics. Shown on catalog screens, where they are actionable, and never in the reader.
 export function Warnings({ warnings }) {
   return warnings.length ? <details className="notice"><summary>{warnings.length} content notice{warnings.length === 1 ? '' : 's'}</summary><ul>{warnings.map(w => <li key={w}>{w}</li>)}</ul></details> : null;
 }
@@ -71,7 +72,7 @@ export function Catalog({ library, categorySlug, all = false }) {
       <div className="card-image"><Thumbnail node={node} /><span className="image-label">{node.type === 'category' ? 'COLLECTION' : 'COURSE'} {String(i + 1).padStart(2, '0')}</span><span className="image-arrow">↗</span></div>
       <div className="card-body"><p className="card-meta">{node.courses ? `${node.courses.length} courses · ${node.courses.reduce((n, c) => n + c.volumes.length, 0)} volumes` : `${node.volumes.length} volumes · Self-paced`}</p><h3>{node.title}</h3><p className="card-description">{node.description}</p>{node.courses?.length === 0 && <p className="muted">No courses yet. Room for something good.</p>}<Progress courses={node.courses || [node]} /></div>
     </a>)}</div>
-    {q.length >= 2 && <section className="search-results" aria-live="polite"><h2>Across the library</h2>{error ? <p role="alert">{error}</p> : !remote ? <p>Searching volume titles and content…</p> : !remote.results.length ? <div className="empty"><h3>No results for “{query}”</h3><p>Try a shorter phrase or another technical term.</p></div> : remote.results.map(result => <a className="search-result" key={result.url} href={result.url}><span className="eyebrow">{result.kind}</span><h3>{result.title}</h3><p className="result-path">{result.path}</p><p>{result.snippet}</p></a>)}{remote?.truncated && <p>Showing the first 40 results. Narrow your search.</p>}</section>}
+    {q.length >= 2 && <section className="search-results" aria-live="polite"><h2>Across the library</h2>{error ? <p role="alert">{error}</p> : !remote ? <p>Searching volume titles and content…</p> : remote.offline ? <p>Search needs a connection. Downloaded courses are still readable from the library.</p> : !remote.results.length ? <div className="empty"><h3>No results for “{query}”</h3><p>Try a shorter phrase or another technical term.</p></div> : remote.results.map(result => <a className="search-result" key={result.url} href={result.url}><span className="eyebrow">{result.kind}</span><h3>{result.title}</h3><p className="result-path">{result.path}</p><p>{result.snippet}</p></a>)}{remote?.truncated && <p>Showing the first 40 results. Narrow your search.</p>}</section>}
     <footer className="library-footer"><span>Made for slow reading and deep understanding.</span><span>Markdown in. Knowledge out.</span></footer>
   </main>;
 }
