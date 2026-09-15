@@ -1,0 +1,32 @@
+{
+  "title": "Volume 4 — Storage, Scheduling, Resources and Reliability",
+  "bookTitle": "Mastering Kubernetes: DevOps Engineering Guide",
+  "description": "Persistent storage with PV/PVC/StorageClass, how the scheduler picks a node, requests and limits, autoscaling, and staying available during maintenance.",
+  "id": "storage-scheduling-resources-reliability",
+  "order": 4,
+  "draft": false,
+  "access": {},
+  "thumbnail": null,
+  "sourceFilename": "volume-4-storage-scheduling-resources-reliability.md",
+  "sourceSha256": "c11d47846ab0b20d83c22c0783b5f8c34013b58cbef9ea0ce21b5247b5345764",
+  "chapterTitles": {
+    "00-overview.md": "Overview",
+    "01-what-are-we-learning.md": "What Are We Learning?",
+    "02-why-should-a-devops-engineer-care.md": "Why Should a DevOps Engineer Care?",
+    "03-what-you-will-be-able-to-do.md": "What You Will Be Able to Do",
+    "04-storage-why-pods-cannot-just-write-to-disk.md": "Storage: Why Pods Cannot Just Write to Disk",
+    "05-lab-1-storage-that-survives-a-pod.md": "LAB 1 — Storage That Survives a Pod",
+    "06-scheduling-how-the-scheduler-actually-decides.md": "Scheduling: How the Scheduler Actually Decides",
+    "07-resources-requests-limits-and-qos.md": "Resources: Requests, Limits and QoS",
+    "08-lab-2-see-scheduling-and-limits-enforced.md": "LAB 2 — See Scheduling and Limits Enforced",
+    "09-autoscaling.md": "Autoscaling",
+    "10-keeping-things-available-poddisruptionbudget.md": "Keeping Things Available: PodDisruptionBudget",
+    "11-production-reality.md": "Production Reality",
+    "12-core-vs-ecosystem.md": "Core vs Ecosystem",
+    "13-things-senior-engineers-notice.md": "Things Senior Engineers Notice",
+    "14-interview-preparation.md": "Interview Preparation",
+    "15-summary.md": "Summary",
+    "16-what-you-learned.md": "What You Learned",
+    "17-next-volume.md": "Next Volume"
+  }
+}

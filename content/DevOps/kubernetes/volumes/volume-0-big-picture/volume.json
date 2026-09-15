@@ -1,0 +1,31 @@
+{
+  "title": "Volume 0 — Kubernetes: The Big Picture",
+  "bookTitle": "Mastering Kubernetes: DevOps Engineering Guide",
+  "description": "What problem Kubernetes actually solves, what it is and is not, the mental model we will use throughout, and your first working cluster.",
+  "id": "big-picture",
+  "order": 0,
+  "draft": false,
+  "access": {},
+  "thumbnail": null,
+  "sourceFilename": "volume-0-big-picture.md",
+  "sourceSha256": "76aea0be50c03144d3331312cb7a549b0359bac901b09a5eb0d36784aa9dbce6",
+  "chapterTitles": {
+    "00-overview.md": "Overview",
+    "01-what-are-we-learning.md": "What Are We Learning?",
+    "02-why-should-a-devops-engineer-care.md": "Why Should a DevOps Engineer Care?",
+    "03-what-you-will-be-able-to-do.md": "What You Will Be Able to Do",
+    "04-life-before-kubernetes.md": "Life Before Kubernetes",
+    "05-the-core-idea-of-kubernetes.md": "The Core Idea of Kubernetes",
+    "06-our-mental-model-the-apartment-complex.md": "Our Mental Model: The Apartment Complex",
+    "07-what-kubernetes-actually-is.md": "What Kubernetes Actually Is",
+    "08-what-kubernetes-is-not.md": "What Kubernetes Is NOT",
+    "09-when-you-should-not-use-kubernetes.md": "When You Should NOT Use Kubernetes",
+    "10-lab-0-your-first-cluster.md": "LAB 0 — Your First Cluster",
+    "11-common-beginner-mistakes-even-at-this-stage.md": "Common Beginner Mistakes (Even at This Stage)",
+    "12-things-senior-engineers-notice.md": "Things Senior Engineers Notice",
+    "13-interview-preparation.md": "Interview Preparation",
+    "14-summary.md": "Summary",
+    "15-what-you-learned.md": "What You Learned",
+    "16-next-volume.md": "Next Volume"
+  }
+}
