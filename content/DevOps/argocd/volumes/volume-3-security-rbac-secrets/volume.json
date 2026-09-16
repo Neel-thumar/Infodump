@@ -1,0 +1,25 @@
+{
+  "title": "Volume 3 — Security, Projects, and Secrets Management",
+  "bookTitle": "Mastering GitOps: Argo CD Engineering Guide",
+  "description": "Securing the GitOps workflow with AppProjects, RBAC, and safe secrets management.",
+  "id": "volume-3-security-rbac-secrets",
+  "order": 3,
+  "draft": false,
+  "access": {},
+  "thumbnail": null,
+  "sourceFilename": "volume-3-security-rbac-secrets.md",
+  "sourceSha256": "809aebfcc80bed87a4262f2da6df08e20a61c193d6c760b917504bac7134c8e6",
+  "chapterTitles": {
+    "00-overview.md": "Overview",
+    "01-what-are-we-learning.md": "What Are We Learning?",
+    "02-why-should-a-devops-engineer-care.md": "Why Should a DevOps Engineer Care?",
+    "03-what-you-will-be-able-to-do.md": "What You Will Be Able to Do",
+    "04-the-gitops-trust-chain.md": "The GitOps Trust Chain",
+    "05-isolating-teams-with-appprojects.md": "Isolating Teams with AppProjects",
+    "06-practical-lab-securing-our-web-application.md": "Practical Lab: Securing Our Web Application",
+    "07-a-brief-note-on-argo-cd-rbac.md": "A Brief Note on Argo CD RBAC",
+    "08-the-secrets-problem-in-gitops.md": "The Secrets Problem in GitOps",
+    "09-things-senior-devops-engineers-notice.md": "Things Senior DevOps Engineers Notice",
+    "10-interview-preparation.md": "Interview Preparation"
+  }
+}

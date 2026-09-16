@@ -1,0 +1,23 @@
+{
+  "title": "Volume 5 — Troubleshooting, Drift, and Reliability",
+  "bookTitle": "Mastering GitOps: Argo CD Engineering Guide",
+  "description": "The debugging mindset, investigating failures, and executing GitOps rollbacks.",
+  "id": "volume-5-troubleshooting-reliability",
+  "order": 5,
+  "draft": false,
+  "access": {},
+  "thumbnail": null,
+  "sourceFilename": "volume-5-troubleshooting-reliability.md",
+  "sourceSha256": "61d7d4182204c72df591f7162d6fcf187093ed3b6cfaecc2425c2afed63a364f",
+  "chapterTitles": {
+    "00-overview.md": "Overview",
+    "01-what-are-we-learning.md": "What Are We Learning?",
+    "02-why-should-a-devops-engineer-care.md": "Why Should a DevOps Engineer Care?",
+    "03-what-you-will-be-able-to-do.md": "What You Will Be Able to Do",
+    "04-the-debugging-mindset-asking-the-right-questions.md": "The Debugging Mindset: Asking the Right Questions",
+    "05-the-four-quadrants-of-gitops-status.md": "The Four Quadrants of GitOps Status",
+    "06-practical-lab-breaking-and-fixing-the-system.md": "Practical Lab: Breaking and Fixing the System",
+    "07-things-senior-devops-engineers-notice.md": "Things Senior DevOps Engineers Notice",
+    "08-interview-preparation.md": "Interview Preparation"
+  }
+}

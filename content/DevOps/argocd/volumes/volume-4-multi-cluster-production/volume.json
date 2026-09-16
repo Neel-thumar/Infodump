@@ -1,0 +1,24 @@
+{
+  "title": "Volume 4 — Multi-Cluster GitOps & Production Architecture",
+  "bookTitle": "Mastering GitOps: Argo CD Engineering Guide",
+  "description": "Scaling GitOps across multiple Kubernetes clusters and designing for high availability.",
+  "id": "volume-4-multi-cluster-production",
+  "order": 4,
+  "draft": false,
+  "access": {},
+  "thumbnail": null,
+  "sourceFilename": "volume-4-multi-cluster-production.md",
+  "sourceSha256": "ba21d511009250ba13621709cf28b0b499bae11823df49411a4e685ee7a93e7f",
+  "chapterTitles": {
+    "00-overview.md": "Overview",
+    "01-what-are-we-learning.md": "What Are We Learning?",
+    "02-why-should-a-devops-engineer-care.md": "Why Should a DevOps Engineer Care?",
+    "03-what-you-will-be-able-to-do.md": "What You Will Be Able to Do",
+    "04-the-mental-model-one-inspector-many-buildings.md": "The Mental Model: One Inspector, Many Buildings",
+    "05-how-argo-cd-accesses-external-clusters.md": "How Argo CD Accesses External Clusters",
+    "06-practical-lab-multi-cluster-gitops.md": "Practical Lab: Multi-Cluster GitOps",
+    "07-production-architecture-high-availability-ha.md": "Production Architecture: High Availability (HA)",
+    "08-things-senior-devops-engineers-notice.md": "Things Senior DevOps Engineers Notice",
+    "09-interview-preparation.md": "Interview Preparation"
+  }
+}

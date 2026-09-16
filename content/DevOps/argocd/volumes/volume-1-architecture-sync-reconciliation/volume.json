@@ -1,0 +1,23 @@
+{
+  "title": "Volume 1 — Argo CD Architecture, Sync, and Reconciliation",
+  "bookTitle": "Mastering GitOps: Argo CD Engineering Guide",
+  "description": "Understanding Argo CD's internal architecture, drift detection, and automated self-healing.",
+  "id": "volume-1-architecture-sync-reconciliation",
+  "order": 1,
+  "draft": false,
+  "access": {},
+  "thumbnail": null,
+  "sourceFilename": "volume-1-architecture-sync-reconciliation.md",
+  "sourceSha256": "1fd9afcd93d7ab7f4c5fd46e96d5b96faa9b4367bed0ea78f555e1dfdb84f2d5",
+  "chapterTitles": {
+    "00-overview.md": "Overview",
+    "01-what-are-we-learning.md": "What Are We Learning?",
+    "02-why-should-a-devops-engineer-care.md": "Why Should a DevOps Engineer Care?",
+    "03-what-you-will-be-able-to-do.md": "What You Will Be Able to Do",
+    "04-argo-cd-architecture-the-mental-model.md": "Argo CD Architecture: The Mental Model",
+    "05-sync-concepts-manual-vs-automated.md": "Sync Concepts: Manual vs Automated",
+    "06-practical-lab-full-automation-and-drift-recovery.md": "Practical Lab: Full Automation and Drift Recovery",
+    "07-things-senior-devops-engineers-notice.md": "Things Senior DevOps Engineers Notice",
+    "08-interview-preparation.md": "Interview Preparation"
+  }
+}

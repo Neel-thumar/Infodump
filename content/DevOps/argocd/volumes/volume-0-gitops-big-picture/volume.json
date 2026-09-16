@@ -1,0 +1,23 @@
+{
+  "title": "Volume 0 — GitOps: The Big Picture & Your First Sync",
+  "bookTitle": "Mastering GitOps: Argo CD Engineering Guide",
+  "description": "Understanding the core GitOps mental model and deploying your first application with Argo CD.",
+  "id": "volume-0-gitops-big-picture",
+  "order": 0,
+  "draft": false,
+  "access": {},
+  "thumbnail": null,
+  "sourceFilename": "volume-0-gitops-big-picture.md",
+  "sourceSha256": "b0319e9318bbcfe921fcdb1aa3712d28bbcb5ad614be13a1cdd311d78a295f96",
+  "chapterTitles": {
+    "00-overview.md": "Overview",
+    "01-what-are-we-learning.md": "What Are We Learning?",
+    "02-why-should-a-devops-engineer-care.md": "Why Should a DevOps Engineer Care?",
+    "03-what-you-will-be-able-to-do.md": "What You Will Be Able to Do",
+    "04-the-mental-model-blueprint-vs-building.md": "The Mental Model: Blueprint vs Building",
+    "05-why-gitops-exists-the-problem-we-are-solving.md": "Why GitOps Exists (The Problem We Are Solving)",
+    "06-practical-lab-your-first-gitops-system.md": "Practical Lab: Your First GitOps System",
+    "07-things-senior-devops-engineers-notice.md": "Things Senior DevOps Engineers Notice",
+    "08-interview-preparation.md": "Interview Preparation"
+  }
+}

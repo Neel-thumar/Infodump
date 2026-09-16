@@ -1,0 +1,26 @@
+{
+  "title": "Volume 6 — Final Production GitOps Project + Interview Mastery",
+  "bookTitle": "Mastering GitOps: Argo CD Engineering Guide",
+  "description": "The complete mental model, production checklists, and system design interview mastery.",
+  "id": "volume-6-final-project-interview-mastery",
+  "order": 6,
+  "draft": false,
+  "access": {},
+  "thumbnail": null,
+  "sourceFilename": "volume-6-final-project-interview-mastery.md",
+  "sourceSha256": "f27aa31b4b989862eed11994b1eee7ebdb8b8abbbd42ff227122b678ba425e2a",
+  "chapterTitles": {
+    "00-overview.md": "Overview",
+    "01-what-are-we-learning.md": "What Are We Learning?",
+    "02-why-should-a-devops-engineer-care.md": "Why Should a DevOps Engineer Care?",
+    "03-what-you-will-be-able-to-do.md": "What You Will Be Able to Do",
+    "04-the-complete-gitops-mental-model.md": "The Complete GitOps Mental Model",
+    "05-final-project-review.md": "Final Project Review",
+    "06-production-gitops-checklist.md": "Production GitOps Checklist",
+    "07-common-mistakes-to-avoid.md": "Common Mistakes to Avoid",
+    "08-gitops-system-design-question.md": "GitOps System Design Question",
+    "09-interview-revision.md": "Interview Revision",
+    "10-what-to-learn-next.md": "What to Learn Next",
+    "11-final-words.md": "Final Words"
+  }
+}
