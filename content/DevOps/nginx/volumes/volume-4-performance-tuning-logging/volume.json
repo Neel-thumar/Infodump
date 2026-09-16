@@ -1,0 +1,32 @@
+{
+  "title": "Volume 4 — Performance Tuning and Logging",
+  "bookTitle": "Mastering nginx: Reverse Proxy, Load Balancer, and Web Server",
+  "description": "Worker and connection tuning, gzip, buffers, sendfile, structured access/error logging, custom log formats, and what to measure before touching anything.",
+  "id": "nginx-vol-4-performance-tuning-logging",
+  "order": 4,
+  "draft": false,
+  "access": {},
+  "thumbnail": null,
+  "sourceFilename": "volume-4-performance-tuning-logging.md",
+  "sourceSha256": "69a969054cb5fd00702389b7f147eb02cc0fc2b8bd6166f92c949a6fefdebd9c",
+  "chapterTitles": {
+    "00-overview.md": "Overview",
+    "01-why-this-matters.md": "Why This Matters",
+    "02-what-you-will-be-able-to-do-after-this-volume.md": "What You Will Be Able to Do After This Volume",
+    "03-the-first-rule-of-tuning-measure-before-you-change.md": "The First Rule of Tuning: Measure Before You Change",
+    "04-worker-tuning.md": "Worker Tuning",
+    "05-keepalive-tuning.md": "Keepalive Tuning",
+    "06-gzip-compression.md": "Gzip Compression",
+    "07-buffer-tuning.md": "Buffer Tuning",
+    "08-static-file-serving-optimizations.md": "Static File Serving Optimizations",
+    "09-what-should-you-actually-measure.md": "What Should You Actually Measure?",
+    "10-logging-making-nginx-observable.md": "Logging — Making nginx Observable",
+    "11-error-log-when-things-go-wrong.md": "Error Log — When Things Go Wrong",
+    "12-conditional-logging.md": "Conditional Logging",
+    "13-log-rotation.md": "Log Rotation",
+    "14-lab-performance-tuning-and-structured-logging-stage-7.md": "Lab: Performance Tuning and Structured Logging (Stage 7)",
+    "15-things-senior-engineers-notice.md": "Things Senior Engineers Notice",
+    "16-interview-questions.md": "Interview Questions",
+    "17-what-s-next-volume-5.md": "What's Next — Volume 5"
+  }
+}

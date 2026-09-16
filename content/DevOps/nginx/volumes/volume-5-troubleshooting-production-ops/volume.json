@@ -1,0 +1,32 @@
+{
+  "title": "Volume 5 — Troubleshooting and Production Operations",
+  "bookTitle": "Mastering nginx: Reverse Proxy, Load Balancer, and Web Server",
+  "description": "Systematic investigation of real nginx failures, the debugging mindset, and production operations: safe reloads, zero-downtime deploys, and HA patterns.",
+  "id": "nginx-vol-5-troubleshooting-production-ops",
+  "order": 5,
+  "draft": false,
+  "access": {},
+  "thumbnail": null,
+  "sourceFilename": "volume-5-troubleshooting-production-ops.md",
+  "sourceSha256": "8d4a75f3c3cc1122afcc84e697bb4c96857afabea7b31c3bf75955088e13c464",
+  "chapterTitles": {
+    "00-overview.md": "Overview",
+    "01-why-this-matters.md": "Why This Matters",
+    "02-what-you-will-be-able-to-do-after-this-volume.md": "What You Will Be Able to Do After This Volume",
+    "03-the-debugging-mindset.md": "The Debugging Mindset",
+    "04-502-bad-gateway-backend-unreachable.md": "502 Bad Gateway — Backend Unreachable",
+    "05-504-gateway-timeout-backend-too-slow.md": "504 Gateway Timeout — Backend Too Slow",
+    "06-403-forbidden-access-denied.md": "403 Forbidden — Access Denied",
+    "07-config-loads-but-the-wrong-location-block-matches.md": "Config Loads, But the Wrong location Block Matches",
+    "08-nginx-won-t-reload-syntax-error.md": "nginx Won't Reload — Syntax Error",
+    "09-nginx-starts-but-nothing-listens-on-the-expected-port.md": "nginx Starts But Nothing Listens on the Expected Port",
+    "10-tls-handshake-failures.md": "TLS Handshake Failures",
+    "11-intermittent-failures-under-load.md": "Intermittent Failures Under Load",
+    "12-caching-serving-stale-or-wrong-content.md": "Caching Serving Stale or Wrong Content",
+    "13-load-balancer-sending-traffic-to-a-dead-backend.md": "Load Balancer Sending Traffic to a Dead Backend",
+    "14-production-operations.md": "Production Operations",
+    "15-things-senior-engineers-notice.md": "Things Senior Engineers Notice",
+    "16-interview-questions.md": "Interview Questions",
+    "17-what-s-next-volume-6.md": "What's Next — Volume 6"
+  }
+}

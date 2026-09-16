@@ -1,0 +1,32 @@
+{
+  "title": "Volume 3 — TLS, Caching, and Security",
+  "bookTitle": "Mastering nginx: Reverse Proxy, Load Balancer, and Web Server",
+  "description": "TLS termination, proxy caching, rate limiting, security headers, and hardening nginx for production traffic.",
+  "id": "nginx-vol-3-tls-caching-security",
+  "order": 3,
+  "draft": false,
+  "access": {},
+  "thumbnail": null,
+  "sourceFilename": "volume-3-tls-caching-security.md",
+  "sourceSha256": "12849ce608a71605276311782e3a058701d9a47402b3291fd8e8e1261d438b05",
+  "chapterTitles": {
+    "00-overview.md": "Overview",
+    "01-why-this-matters.md": "Why This Matters",
+    "02-what-you-will-be-able-to-do-after-this-volume.md": "What You Will Be Able to Do After This Volume",
+    "03-tls-termination-https-at-the-front-door.md": "TLS Termination — HTTPS at the Front Door",
+    "04-lab-add-tls-to-the-project-stage-4.md": "Lab: Add TLS to the Project (Stage 4)",
+    "05-tls-in-production-what-changes.md": "TLS in Production — What Changes",
+    "06-caching-avoiding-unnecessary-backend-work.md": "Caching — Avoiding Unnecessary Backend Work",
+    "07-lab-add-caching-stage-5.md": "Lab: Add Caching (Stage 5)",
+    "08-browser-caching-for-static-assets.md": "Browser Caching for Static Assets",
+    "09-rate-limiting-protecting-against-abuse.md": "Rate Limiting — Protecting Against Abuse",
+    "10-security-headers-what-the-browser-needs.md": "Security Headers — What the Browser Needs",
+    "11-ip-based-access-control-allow-and-deny.md": "IP-Based Access Control — allow and deny",
+    "12-protecting-against-slow-clients.md": "Protecting Against Slow Clients",
+    "13-what-nginx-can-and-cannot-protect.md": "What nginx Can and Cannot Protect",
+    "14-lab-add-rate-limiting-and-security-headers-stage-6.md": "Lab: Add Rate Limiting and Security Headers (Stage 6)",
+    "15-things-senior-engineers-notice.md": "Things Senior Engineers Notice",
+    "16-interview-questions.md": "Interview Questions",
+    "17-what-s-next-volume-4.md": "What's Next — Volume 4"
+  }
+}

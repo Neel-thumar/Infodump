@@ -1,0 +1,29 @@
+{
+  "title": "Volume 0 — nginx: The Big Picture",
+  "bookTitle": "Mastering nginx: Reverse Proxy, Load Balancer, and Web Server",
+  "description": "What nginx is, why it exists, where it sits in your infrastructure, and setting up the continuous project environment.",
+  "id": "nginx-vol-0-big-picture",
+  "order": 0,
+  "draft": false,
+  "access": {},
+  "thumbnail": null,
+  "sourceFilename": "volume-0-the-big-picture.md",
+  "sourceSha256": "b22a077342067134b10884326e1ea87f7e58ce1b97768e1546dd0fdd58a2f6de",
+  "chapterTitles": {
+    "00-overview.md": "Overview",
+    "01-what-you-will-be-able-to-do-after-this-volume.md": "What You Will Be Able to Do After This Volume",
+    "02-what-is-nginx.md": "What Is nginx?",
+    "03-the-front-desk-analogy.md": "The Front-Desk Analogy",
+    "04-why-does-nginx-exist.md": "Why Does nginx Exist?",
+    "05-the-three-jobs-of-nginx.md": "The Three Jobs of nginx",
+    "06-where-nginx-sits-in-the-request-journey.md": "Where nginx Sits in the Request Journey",
+    "07-nginx-vs-other-tools-brief-comparison.md": "nginx vs Other Tools — Brief Comparison",
+    "08-nginx-in-2026-where-does-it-fit-today.md": "nginx in 2026 — Where Does It Fit Today?",
+    "09-the-continuous-project-what-we-are-building.md": "The Continuous Project — What We Are Building",
+    "10-setting-up-the-lab-environment.md": "Setting Up the Lab Environment",
+    "11-essential-commands-you-will-use-constantly.md": "Essential Commands You Will Use Constantly",
+    "12-the-mental-model-we-will-build.md": "The Mental Model We Will Build",
+    "13-what-s-next-volume-1.md": "What's Next — Volume 1",
+    "14-lab-cleanup.md": "Lab Cleanup"
+  }
+}

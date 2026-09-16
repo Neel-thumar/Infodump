@@ -1,0 +1,32 @@
+{
+  "title": "Volume 2 — Reverse Proxy and Load Balancing",
+  "bookTitle": "Mastering nginx: Reverse Proxy, Load Balancer, and Web Server",
+  "description": "proxy_pass mechanics, proxy headers, upstream blocks, load-balancing methods, backend failure detection, and the trailing-slash trap.",
+  "id": "nginx-vol-2-reverse-proxy-load-balancing",
+  "order": 2,
+  "draft": false,
+  "access": {},
+  "thumbnail": null,
+  "sourceFilename": "volume-2-reverse-proxy-load-balancing.md",
+  "sourceSha256": "680c644f9cc1084cdac2ddec036846f4d95dc2466fca3729b31b4e1740b6bd14",
+  "chapterTitles": {
+    "00-overview.md": "Overview",
+    "01-why-this-matters.md": "Why This Matters",
+    "02-what-you-will-be-able-to-do-after-this-volume.md": "What You Will Be Able to Do After This Volume",
+    "03-what-is-a-reverse-proxy.md": "What Is a Reverse Proxy?",
+    "04-proxy-pass-the-core-directive.md": "proxy_pass — The Core Directive",
+    "05-proxy-headers-what-the-backend-needs-to-know.md": "Proxy Headers — What the Backend Needs to Know",
+    "06-proxy-timeouts-when-backends-are-slow.md": "Proxy Timeouts — When Backends Are Slow",
+    "07-proxy-buffering-how-nginx-manages-the-speed-difference.md": "Proxy Buffering — How nginx Manages the Speed Difference",
+    "08-lab-reverse-proxy-to-one-backend-stage-2.md": "Lab: Reverse Proxy to One Backend (Stage 2)",
+    "09-upstream-blocks-grouping-backends.md": "upstream Blocks — Grouping Backends",
+    "10-load-balancing-methods.md": "Load-Balancing Methods",
+    "11-backend-health-what-happens-when-a-backend-fails.md": "Backend Health — What Happens When a Backend Fails",
+    "12-lab-load-balancing-across-two-backends-stage-3.md": "Lab: Load Balancing Across Two Backends (Stage 3)",
+    "13-keepalive-connections-to-upstreams.md": "Keepalive Connections to Upstreams",
+    "14-the-complete-stage-3-config.md": "The Complete Stage 3 Config",
+    "15-things-senior-engineers-notice.md": "Things Senior Engineers Notice",
+    "16-interview-questions.md": "Interview Questions",
+    "17-what-s-next-volume-3.md": "What's Next — Volume 3"
+  }
+}

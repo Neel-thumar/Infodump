@@ -1,0 +1,27 @@
+{
+  "title": "Volume 6 — Final Production Config + Interview Mastery",
+  "bookTitle": "Mastering nginx: Reverse Proxy, Load Balancer, and Web Server",
+  "description": "The complete production nginx config fully explained, nginx's role in 2026 infrastructure, a production readiness checklist, and full interview revision.",
+  "id": "nginx-vol-6-final-config-interview-mastery",
+  "order": 6,
+  "draft": false,
+  "access": {},
+  "thumbnail": null,
+  "sourceFilename": "volume-6-final-config-interview-mastery.md",
+  "sourceSha256": "faf77014cc23dfc807a88f79c3ec20a53ff94f701906d3e77eeb8c449195ac8b",
+  "chapterTitles": {
+    "00-overview.md": "Overview",
+    "01-why-this-matters.md": "Why This Matters",
+    "02-what-you-will-be-able-to-do-after-this-volume.md": "What You Will Be Able to Do After This Volume",
+    "03-the-complete-production-configuration.md": "The Complete Production Configuration",
+    "04-the-complete-nginx-mental-model-final-version.md": "The Complete nginx Mental Model — Final Version",
+    "05-production-readiness-checklist.md": "Production Readiness Checklist",
+    "06-nginx-in-2026-extended-context.md": "nginx in 2026 — Extended Context",
+    "07-nginx-design-question-worked-example.md": "nginx Design Question — Worked Example",
+    "08-what-i-must-remember-the-essentials.md": "What I Must Remember — The Essentials",
+    "09-common-mistakes-to-actively-avoid.md": "Common Mistakes to Actively Avoid",
+    "10-interview-revision-complete-set.md": "Interview Revision — Complete Set",
+    "11-what-to-learn-next.md": "What to Learn Next",
+    "12-closing.md": "Closing"
+  }
+}
