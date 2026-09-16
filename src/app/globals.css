@@ -269,3 +269,10 @@ body[data-reading-focus] .focus-toggle:focus-visible { opacity:1; }
 .toc-chapter-link[aria-current="location"] { color:var(--accent)!important; }
 .toc-chapter-mark { color:var(--muted); font-size:10px; font-variant-numeric:tabular-nums; flex:none; }
 .toc-chapter-link[aria-current="location"] .toc-chapter-mark { color:var(--accent); }
+/* No artwork: a plain plate carrying the name, in theme colours, with no generated tint. */
+.thumb.fallback { display:flex; align-items:flex-end; padding:20px; background:var(--soft); border-bottom:1px solid var(--line); color:var(--text); font-size:15px; font-weight:600; line-height:1.4; letter-spacing:-.3px; text-align:left; overflow:hidden; }
+.thumb.fallback span { display:-webkit-box; -webkit-line-clamp:3; -webkit-box-orient:vertical; overflow:hidden; }
+/* Room for the corner arrow, and overlay chrome that was drawn for dark cover art. */
+.card-image .thumb.fallback { padding-right:58px; }
+.card-image:has(.thumb.fallback) .image-label { color:var(--muted); background:transparent; border-color:var(--line); text-shadow:none; }
+.card-image:has(.thumb.fallback) .image-arrow { color:var(--muted); background:transparent; border-color:var(--line); }

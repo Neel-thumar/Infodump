@@ -1,6 +1,5 @@
 import fs from 'node:fs/promises';
 import path from 'node:path';
-import crypto from 'node:crypto';
 
 export const imageExtensions = ['.avif', '.webp', '.png', '.jpg', '.jpeg', '.svg'];
 const mime = { '.avif': 'image/avif', '.webp': 'image/webp', '.png': 'image/png', '.jpg': 'image/jpeg', '.jpeg': 'image/jpeg', '.svg': 'image/svg+xml' };
@@ -34,10 +33,11 @@ export function patternOrder(a, b) {
   const wild = s => (s.match(/\*/g) || []).length;
   return prefix(b) - prefix(a) || wild(a) - wild(b) || a.localeCompare(b, 'en');
 }
-export function placeholder(id, title) {
-  const hue = parseInt(crypto.createHash('sha256').update(id).digest('hex').slice(0, 6), 16) % 360;
-  const initials = title.split(/\s+/).slice(0, 2).map(s => [...s][0]).join('').toUpperCase().replace(/[<>&"']/g, '');
-  const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="720" height="400" viewBox="0 0 720 400"><defs><linearGradient id="g" x2="1" y2="1"><stop stop-color="hsl(${hue},42%,24%)"/><stop offset="1" stop-color="hsl(${(hue + 35) % 360},36%,12%)"/></linearGradient></defs><path fill="url(#g)" d="M0 0h720v400H0z"/><g fill="none" stroke="white" opacity=".12"><circle cx="640" cy="50" r="210"/><circle cx="640" cy="50" r="150"/><path d="M0 320h720M0 340h720M0 360h720"/></g><text x="52" y="270" fill="white" font-family="system-ui,sans-serif" font-size="100" font-weight="600">${initials}</text></svg>`;
+// No artwork is not an occasion for invented artwork: a plain plate carrying the name beats a
+// tinted gradient and two initials, which for "Mastering X" titles are the same two letters.
+export function placeholder(title) {
+  const text = [...String(title)].slice(0, 58).join('').replace(/[<>&"']/g, ' ');
+  const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="720" height="400" viewBox="0 0 720 400"><rect width="720" height="400" fill="#eef1ea"/><text x="44" y="356" fill="#697168" font-family="system-ui,sans-serif" font-size="27">${text}</text></svg>`;
   return `data:image/svg+xml,${encodeURIComponent(svg)}`;
 }
 export async function resolveThumbnail(node, parent, config, root, warn) {
@@ -63,7 +63,7 @@ export async function resolveThumbnail(node, parent, config, root, warn) {
     hit = { ...parent.thumbnail, origin: 'inherited' };
   }
   if (!hit) hit = await trySource(config.defaults?.[node.resource.type], 'default');
-  if (!hit) return { url: placeholder(node.resource.id, node.title), origin: 'placeholder' };
+  if (!hit) return { url: placeholder(node.title), origin: 'placeholder' };
   return { ...hit, url: `/thumb?node=${encodeURIComponent(node.key)}` };
 }
 

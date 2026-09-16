@@ -6,9 +6,10 @@ import { statePrefix } from '../lib/state.js';
 export function Thumbnail({ node, className = '' }) {
   const [failed, setFailed] = useState(false);
   useEffect(() => setFailed(false), [node.thumbnail?.url]);
-  if (failed || !node.thumbnail) {
-    let hash = 0; for (const char of node.id) hash = (hash * 31 + char.codePointAt(0)) >>> 0;
-    return <div className={`thumb fallback ${className}`} style={{ background: `hsl(${hash % 360},35%,25%)` }} aria-label={node.title}>{node.title.split(' ').slice(0, 2).map(w => w[0]).join('')}</div>;
+  // With no artwork, say what the thing is called. A DOM plate rather than the server's data
+  // URI, so it follows the theme; aria-hidden because the card names the node again below.
+  if (failed || !node.thumbnail || node.thumbnail.origin === 'placeholder') {
+    return <div className={`thumb fallback ${className}`} aria-hidden="true"><span>{node.title}</span></div>;
   }
   return <img className={`thumb ${className}`} src={node.thumbnail.url} alt="" loading="lazy" data-origin={node.thumbnail.origin} onError={() => setFailed(true)} />;
 }

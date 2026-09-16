@@ -28,7 +28,7 @@ test('filesystem, access and thumbnail integration', async t => {
       assert.notEqual(linux.volumes[1].url, trees.volumes[0].url);
       assert.equal(library.categories[2].courses.length, 0);
       assert.equal(linux.thumbnail.origin, 'placeholder');
-      assert.equal(linux.thumbnail.url, placeholder(linux.resource.id, linux.title));
+      assert.equal(linux.thumbnail.url, placeholder(linux.title));
       assert.ok(!JSON.stringify(publicLibrary(library)).includes('SECRET_VOLUME'));
     });
     await t.test('hot discovery, double digits, direct course, collision slugs, draft and stable IDs', async () => {
