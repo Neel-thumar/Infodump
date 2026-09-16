@@ -7,6 +7,7 @@ import { visit } from 'unist-util-visit';
 import { toString } from 'mdast-util-to-string';
 import { can } from './access/policy.js';
 import { parseDocument, displayName, accessMetadata, renderDocument, visibleTree, searchableText } from './markdown.js';
+import { fullVolumeUrl } from './reading-mode.js';
 import { resolveThumbnail, imageResponse } from './thumbnails.js';
 
 const documents = new Map();
@@ -265,6 +266,42 @@ export async function loadVolume(viewer, course, volume, chapterSlug) {
     previous: chapter ? (navigate.effect !== 'deny' ? chapterNeighbor(volume.chapters[chapterIndex - 1]) : null) : await neighbor(course.volumes[index - 1]),
     next: chapter ? (navigate.effect !== 'deny' ? chapterNeighbor(volume.chapters[chapterIndex + 1]) : null) : await neighbor(course.volumes[index + 1]),
     previousVolume: await neighbor(course.volumes[index - 1]), nextVolume: await neighbor(course.volumes[index + 1]) };
+}
+
+// Continuous reading: every chapter of one volume rendered into a single scrollable page.
+// The volume is parsed once and the shared tree is split per chapter, so this costs about one
+// chapter render per chapter instead of re-reading the whole volume for each of them.
+export async function loadFullVolume(viewer, course, volume) {
+  const decision = await decisionFor(viewer, 'read', volume);
+  const index = course.volumes.indexOf(volume);
+  const neighbor = async v => v && (await decisionFor(viewer, 'navigate', v)).effect !== 'deny' ? publicNode(v) : null;
+  // Adjacent volumes keep the reader in continuous mode; a single-file volume is already whole.
+  const sameMode = node => node && { ...node, url: node.chapters?.length ? fullVolumeUrl(node.url) : node.url };
+  const previousVolume = await neighbor(course.volumes[index - 1]), nextVolume = await neighbor(course.volumes[index + 1]);
+  const result = { continuous: true, decision, chapters: [], toc: [], html: '', minutes: 0,
+    preview: decision.effect === 'partial', chapter: null,
+    previousVolume, nextVolume, previous: sameMode(previousVolume), next: sameMode(nextVolume) };
+  if (decision.effect === 'deny') return result;
+  try {
+    const document = await volumeDocument(volume);
+    const tree = visibleTree(document.tree, decision);
+    const present = new Set(tree.children.map(node => node.data?.chapterId));
+    for (const chapter of volume.chapters) {
+      if (!present.has(chapter.id)) continue;
+      const children = tree.children.filter(node => node.data?.chapterId === chapter.id || node.type === 'definition');
+      // No headingLinks: every chapter shares this page, so bare #anchors already resolve.
+      const rendered = await renderDocument({ ...document, headingLinks: null, tree: { ...tree, children } }, { effect: 'allow' });
+      const first = children.find(node => node.data?.chapterId === chapter.id && node.type !== 'definition');
+      result.chapters.push({ id: chapter.id, slug: chapter.slug, title: chapter.title, url: chapter.url,
+        progressAllowed: chapter.progressAllowed, ...rendered,
+        repeatedTitle: first?.type === 'heading' && toString(first) === chapter.title });
+      result.minutes += rendered.minutes;
+    }
+    result.empty = !result.chapters.some(chapter => !chapter.empty);
+  } catch (error) {
+    result.error = `This volume could not be read (${error.code || 'invalid content'}). Check its file and permissions.`;
+  }
+  return result;
 }
 
 export async function searchLibrary(viewer, query, suppliedLibrary) {

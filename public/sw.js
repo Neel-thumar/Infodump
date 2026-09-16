@@ -40,7 +40,9 @@ self.addEventListener('activate', event => {
 });
 
 const isAsset = url => url.pathname.startsWith('/_next/static/') || url.pathname === '/thumb';
-const keyFor = url => url.pathname + (url.pathname === '/thumb' ? url.search : '');
+// The query is part of the key: continuous reading renders a different page at the volume's
+// own URL, and /thumb is addressed entirely by its query.
+const keyFor = url => url.pathname + url.search;
 
 self.addEventListener('fetch', event => {
   const { request } = event;
@@ -82,7 +84,8 @@ async function navigate(request, url, event) {
     if (response.ok && !response.redirected) event.waitUntil(store(key, response.clone()));
     return response;
   } catch {
-    return (await caches.match(key)) || offlinePage();
+    // Fall back to the bare path so a link carrying tracking parameters still resolves.
+    return (await caches.match(key)) || (url.search && await caches.match(url.pathname)) || offlinePage();
   }
 }
 

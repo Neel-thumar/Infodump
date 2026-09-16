@@ -1,6 +1,8 @@
 // What a course needs to be readable with the network off. Works from an already-scanned
 // public library, so the access policy has run and denied nodes are simply absent.
-export const PLAN_VERSION = 1;
+import { fullVolumeUrl } from '../reading-mode.js';
+
+export const PLAN_VERSION = 2;
 
 export function findCourse(library, courseId) {
   for (const category of library.categories) {
@@ -20,8 +22,11 @@ export function coursePlan(library, courseId) {
     if (volume.decision?.effect === 'deny') continue;
     // A volume that has chapters redirects to the first one. Caching a redirect and
     // replaying it for a navigation is a TypeError, so cache the destinations instead.
-    if (volume.chapters?.length) pages.push(...volume.chapters.map(chapter => chapter.url));
-    else pages.push(volume.url);
+    if (volume.chapters?.length) {
+      pages.push(...volume.chapters.map(chapter => chapter.url));
+      // Continuous reading is a separate render at the volume URL, so it needs its own copy.
+      pages.push(fullVolumeUrl(volume.url));
+    } else pages.push(volume.url);
     thumbnails.push(volume.thumbnail);
   }
   // Remote and placeholder thumbnails are either opaque or inline; neither needs caching.

@@ -1,6 +1,7 @@
 'use client';
 import { useEffect } from 'react';
 import { statePrefix } from '../lib/state.js';
+import { chapterAnchor } from '../lib/reading-mode.js';
 import { ThemeToggle, useReading } from './ClientState.js';
 
 export const defaultPreferences = { sidebar: true, toc: true, header: true, breadcrumbs: true, title: true, progress: true, footer: true, toolbar: true, fontSize: 19, width: 'wide' };
@@ -15,7 +16,7 @@ export function useReaderPreferences() {
   return { preferences, setPreference, reset: () => save(key, defaultPreferences) };
 }
 
-export default function ReaderControls({ volume, chapter, rendered, preferences, setPreference, reset, onMenu, menuRef, drawerOpen }) {
+export default function ReaderControls({ volume, chapter, rendered, full, activeChapter, preferences, setPreference, reset, onMenu, menuRef, drawerOpen }) {
   useEffect(() => {
     const closeOutside = event => {
       const settings = document.querySelector('.reader-settings[open]');
@@ -37,7 +38,12 @@ export default function ReaderControls({ volume, chapter, rendered, preferences,
     <button ref={menuRef} className="panels-button" onClick={onMenu} title="Toggle course navigation" aria-label="Toggle course navigation" aria-controls="volume-sidebar" aria-expanded={drawerOpen || preferences.sidebar}>☰</button>
     <div className="chapter-switcher">
       {rendered?.previous ? <a className="step-button" href={rendered.previous.url} aria-label={chapter ? 'Previous chapter' : 'Previous volume'} title="Previous · Left arrow">←</a> : <button className="step-button" aria-label="Previous chapter" disabled>←</button>}
-      {chapter ? <label className="chapter-select"><span className="sr-only">Go to chapter</span><select aria-label="Go to chapter" value={chapter.url} onChange={e => window.location.assign(e.target.value)}>{volume.chapters.map((ch, i) => <option key={ch.id} value={ch.url}>{i + 1} / {volume.chapters.length} · {ch.title}</option>)}</select></label> : <span className="toolbar-title">{volume ? 'Volume reader' : 'Course overview'}</span>}
+      {full ? <label className="chapter-select"><span className="sr-only">Jump to chapter</span><select aria-label="Jump to chapter" value={activeChapter || full.chapters[0]?.id || ''} onChange={e => {
+        const entry = full.chapters.find(item => item.id === e.target.value);
+        // Move the hash so the position is shareable, then let the browser do the scrolling.
+        if (entry) window.location.hash = chapterAnchor(entry);
+      }}>{full.chapters.map((entry, i) => <option key={entry.id} value={entry.id}>{i + 1} / {full.chapters.length} · {entry.title}</option>)}</select></label>
+      : chapter ? <label className="chapter-select"><span className="sr-only">Go to chapter</span><select aria-label="Go to chapter" value={chapter.url} onChange={e => window.location.assign(e.target.value)}>{volume.chapters.map((ch, i) => <option key={ch.id} value={ch.url}>{i + 1} / {volume.chapters.length} · {ch.title}</option>)}</select></label> : <span className="toolbar-title">{volume ? 'Volume reader' : 'Course overview'}</span>}
       {rendered?.next ? <a className="step-button" href={rendered.next.url} aria-label={chapter ? 'Next chapter' : 'Next volume'} title="Next · Right arrow">→</a> : <button className="step-button" aria-label="Next chapter" disabled>→</button>}
     </div>
     <details className="reader-settings" onKeyDown={event => { if (event.key === 'Escape') { event.currentTarget.open = false; event.currentTarget.querySelector('summary').focus(); } }}>

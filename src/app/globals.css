@@ -250,3 +250,22 @@ body[data-reading-focus] .focus-toggle:focus-visible { opacity:1; }
 .offline-state.done { color:var(--accent); }
 .offline-track { width:180px; height:5px; background:var(--soft); border:1px solid var(--line); border-radius:30px; overflow:hidden; }
 .offline-track span { display:block; height:100%; background:var(--accent); transition:width .2s ease; }
+/* Continuous reading: the whole volume on one page, chapter by chapter. */
+.mode-button { display:inline-flex; align-items:center; gap:7px; border:1px solid var(--line); background:var(--panel); border-radius:30px; padding:7px 15px; font-size:11px; color:var(--text); white-space:nowrap; }
+.mode-button:hover { border-color:var(--accent); color:var(--accent); }
+.mode-button.is-primary { background:var(--accent); border-color:var(--accent); color:var(--bg); font-weight:600; }
+.mode-button.is-primary:hover { color:var(--bg); opacity:.9; }
+.chapter-section { scroll-margin-top:76px; }
+.chapter-section + .chapter-section { margin-top:64px; border-top:2px solid var(--line); padding-top:44px; }
+.chapter-section-header { margin-bottom:26px; }
+.chapter-section-header h2 { font-family:Georgia,serif; font-weight:400; font-size:clamp(24px,2.3vw,33px); line-height:1.25; letter-spacing:-.8px; margin:8px 0 12px; overflow-wrap:anywhere; border:0; padding:0; }
+.chapter-section-link { font-size:11px; color:var(--muted); text-decoration:underline; text-underline-offset:3px; }
+.chapter-section-link:hover { color:var(--accent); }
+/* The section header already names the chapter, so a repeated heading stays hidden even when
+   the page title is hidden or focus mode is on — both of which unhide it in single-chapter view. */
+.chapter-section .prose.repeated-chapter-title>:first-child { display:none!important; }
+.toc-chapter + .toc-chapter { margin-top:2px; }
+.toc-chapter-link { display:flex!important; gap:8px; align-items:baseline; font-size:12px; font-weight:500; color:var(--text)!important; }
+.toc-chapter-link[aria-current="location"] { color:var(--accent)!important; }
+.toc-chapter-mark { color:var(--muted); font-size:10px; font-variant-numeric:tabular-nums; flex:none; }
+.toc-chapter-link[aria-current="location"] .toc-chapter-mark { color:var(--accent); }
