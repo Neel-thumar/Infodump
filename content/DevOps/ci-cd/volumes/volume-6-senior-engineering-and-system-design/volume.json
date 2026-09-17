@@ -1,0 +1,23 @@
+{
+  "title": "Volume 6 — Senior CI/CD Engineering, System Design and Final Revision",
+  "bookTitle": "Volume 6 — Senior CI/CD Engineering, System Design and Final Revision",
+  "description": "",
+  "id": null,
+  "order": 6,
+  "draft": false,
+  "access": {},
+  "thumbnail": null,
+  "sourceFilename": "volume-6-senior-engineering-and-system-design.md",
+  "sourceSha256": "ef9d44b5dd2a9a6854746a5ea860efa9ae4979ac191bbc5037474c520e0ee362",
+  "chapterTitles": {
+    "00-overview.md": "Overview",
+    "01-part-1-senior-engineering.md": "Part 1 — Senior Engineering",
+    "02-part-2-production-architecture.md": "Part 2 — Production Architecture",
+    "03-part-3-system-design-exercise.md": "Part 3 — System Design Exercise",
+    "04-part-4-the-final-project.md": "Part 4 — The Final Project",
+    "05-part-5-final-revision.md": "Part 5 — Final Revision",
+    "06-interview-revision.md": "Interview revision",
+    "07-what-to-learn-next.md": "What to learn next",
+    "08-where-you-started-and-where-you-are.md": "Where you started, and where you are"
+  }
+}

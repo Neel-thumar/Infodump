@@ -1,0 +1,26 @@
+{
+  "title": "Volume 0 — CI/CD: The Big Picture",
+  "bookTitle": "Volume 0 — CI/CD: The Big Picture",
+  "description": "",
+  "id": null,
+  "order": 0,
+  "draft": false,
+  "access": {},
+  "thumbnail": null,
+  "sourceFilename": "volume-0-cicd-big-picture.md",
+  "sourceSha256": "cdf4a68fb664bcf0728761b671dfdcfd22511fb0ef9f2ac3e788241bc6961d59",
+  "chapterTitles": {
+    "00-overview.md": "Overview",
+    "01-1-the-problem-before-ci-cd.md": "1. The problem before CI/CD",
+    "02-2-what-ci-cd-actually-solves.md": "2. What CI/CD actually solves",
+    "03-3-the-complete-delivery-lifecycle.md": "3. The complete delivery lifecycle",
+    "04-4-the-analogy-a-software-factory.md": "4. The analogy: a software factory",
+    "05-5-why-gitlab-ci-cd-for-this-guide.md": "5. Why GitLab CI/CD for this guide",
+    "06-6-the-one-thing-you-will-build.md": "6. The one thing you will build",
+    "07-7-optional-see-a-green-pipeline-once.md": "7. Optional: see a green pipeline once",
+    "08-common-mistakes-at-this-stage.md": "Common mistakes at this stage",
+    "09-things-senior-engineers-notice.md": "Things senior engineers notice",
+    "10-interview-questions.md": "Interview questions",
+    "11-volume-0-checklist.md": "Volume 0 checklist"
+  }
+}

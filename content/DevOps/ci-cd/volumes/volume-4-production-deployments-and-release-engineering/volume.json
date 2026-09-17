@@ -1,0 +1,28 @@
+{
+  "title": "Volume 4 — Production Deployments and Release Engineering",
+  "bookTitle": "Volume 4 — Production Deployments and Release Engineering",
+  "description": "",
+  "id": null,
+  "order": 4,
+  "draft": false,
+  "access": {},
+  "thumbnail": null,
+  "sourceFilename": "volume-4-production-deployments-and-release-engineering.md",
+  "sourceSha256": "832e50bd092b2e2cacda28d31adc8a0264ef954a68d73f97608d5abd97686997",
+  "chapterTitles": {
+    "00-overview.md": "Overview",
+    "01-1-deployment-is-a-moment-of-risk-not-a-command.md": "1. Deployment is a moment of risk, not a command",
+    "02-2-the-four-strategies.md": "2. The four strategies",
+    "03-3-the-compatibility-problem-nobody-warns-you-about.md": "3. The compatibility problem nobody warns you about",
+    "04-4-verification-proving-the-application-works.md": "4. Verification: proving the application works",
+    "05-5-rollback.md": "5. Rollback",
+    "06-6-release-tracking.md": "6. Release tracking",
+    "07-7-the-project-pipeline-now.md": "7. The project pipeline now",
+    "08-8-troubleshooting.md": "8. Troubleshooting",
+    "09-production-reality.md": "Production reality",
+    "10-common-mistakes.md": "Common mistakes",
+    "11-things-senior-engineers-notice.md": "Things senior engineers notice",
+    "12-interview-questions.md": "Interview questions",
+    "13-volume-4-checklist.md": "Volume 4 checklist"
+  }
+}

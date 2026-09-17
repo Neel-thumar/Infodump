@@ -1,0 +1,22 @@
+{
+  "title": "Volume 5 — Security, Troubleshooting and Production CI/CD",
+  "bookTitle": "Volume 5 — Security, Troubleshooting and Production CI/CD",
+  "description": "",
+  "id": null,
+  "order": 5,
+  "draft": false,
+  "access": {},
+  "thumbnail": null,
+  "sourceFilename": "volume-5-security-troubleshooting-production.md",
+  "sourceSha256": "d978dd85b98b38c44645361bb8c51595b2a7a5d9d7bc7e207008f57c0dc18097",
+  "chapterTitles": {
+    "00-overview.md": "Overview",
+    "01-part-1-security.md": "Part 1 — Security",
+    "02-part-2-troubleshooting.md": "Part 2 — Troubleshooting",
+    "03-part-3-production-ci-cd-at-scale.md": "Part 3 — Production CI/CD at scale",
+    "04-common-mistakes.md": "Common mistakes",
+    "05-things-senior-engineers-notice.md": "Things senior engineers notice",
+    "06-interview-questions.md": "Interview questions",
+    "07-volume-5-checklist.md": "Volume 5 checklist"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "title": "Volume 3 — From CI to CD",
+  "bookTitle": "Volume 3 — From CI to CD",
+  "description": "",
+  "id": null,
+  "order": 3,
+  "draft": false,
+  "access": {},
+  "thumbnail": null,
+  "sourceFilename": "volume-3-from-ci-to-cd.md",
+  "sourceSha256": "375c6089c79ac013dcaf4395ab102aaaeeaea268f3ae7e7af4604cfcb7e86d52",
+  "chapterTitles": {
+    "00-overview.md": "Overview",
+    "01-1-the-problem-the-same-code-built-four-times.md": "1. The problem: the same code, built four times",
+    "02-2-containers-only-as-much-as-ci-cd-needs.md": "2. Containers — only as much as CI/CD needs",
+    "03-3-building-images-inside-a-pipeline.md": "3. Building images inside a pipeline",
+    "04-4-the-gitlab-container-registry.md": "4. The GitLab Container Registry",
+    "05-5-environments.md": "5. Environments",
+    "06-6-manual-approval-the-gate-that-makes-it-delivery.md": "6. Manual approval — the gate that makes it Delivery",
+    "07-7-the-project-pipeline-so-far.md": "7. The project pipeline so far",
+    "08-8-troubleshooting.md": "8. Troubleshooting",
+    "09-production-reality.md": "Production reality",
+    "10-common-mistakes.md": "Common mistakes",
+    "11-things-senior-engineers-notice.md": "Things senior engineers notice",
+    "12-interview-questions.md": "Interview questions",
+    "13-volume-3-checklist.md": "Volume 3 checklist"
+  }
+}

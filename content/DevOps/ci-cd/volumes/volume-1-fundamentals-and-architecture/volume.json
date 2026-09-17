@@ -1,0 +1,26 @@
+{
+  "title": "Volume 1 — CI/CD Fundamentals and GitLab CI/CD Architecture",
+  "bookTitle": "Volume 1 — CI/CD Fundamentals and GitLab CI/CD Architecture",
+  "description": "",
+  "id": null,
+  "order": 1,
+  "draft": false,
+  "access": {},
+  "thumbnail": null,
+  "sourceFilename": "volume-1-fundamentals-and-architecture.md",
+  "sourceSha256": "226c6c5de121ac0bee63d239dfa3f621e138022f3b541547b4b106b5ada0a4f3",
+  "chapterTitles": {
+    "00-overview.md": "Overview",
+    "01-1-the-question-that-organises-everything.md": "1. The question that organises everything",
+    "02-2-the-four-layer-model.md": "2. The four-layer model",
+    "03-3-gitlab-runners-the-part-people-skip.md": "3. GitLab Runners — the part people skip",
+    "04-4-gitlab-ci-yml-starting-small.md": "4. .gitlab-ci.yml — starting small",
+    "05-5-what-happens-when-you-push-step-by-step.md": "5. What happens when you push — step by step",
+    "06-6-troubleshooting-the-investigation-method.md": "6. Troubleshooting: the investigation method",
+    "07-7-production-reality.md": "7. Production reality",
+    "08-common-mistakes.md": "Common mistakes",
+    "09-things-senior-engineers-notice.md": "Things senior engineers notice",
+    "10-interview-questions.md": "Interview questions",
+    "11-volume-1-checklist.md": "Volume 1 checklist"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "title": "Volume 2 — Building Real CI Pipelines",
+  "bookTitle": "Volume 2 — Building Real CI Pipelines",
+  "description": "",
+  "id": null,
+  "order": 2,
+  "draft": false,
+  "access": {},
+  "thumbnail": null,
+  "sourceFilename": "volume-2-building-real-ci-pipelines.md",
+  "sourceSha256": "d0670194d27038ec2359ca00ac17946efc73f79f4fce46a894576487730449d9",
+  "chapterTitles": {
+    "00-overview.md": "Overview",
+    "01-1-the-problem-a-job-starts-with-nothing.md": "1. The problem: a job starts with nothing",
+    "02-2-artifacts-vs-cache.md": "2. Artifacts vs cache",
+    "03-3-the-project-a-real-ci-pipeline.md": "3. The project: a real CI pipeline",
+    "04-4-variables.md": "4. Variables",
+    "05-5-rules-deciding-when-jobs-run.md": "5. Rules — deciding when jobs run",
+    "06-6-job-relationships-stages-vs-needs.md": "6. Job relationships: stages vs needs",
+    "07-7-reliability-keywords.md": "7. Reliability keywords",
+    "08-8-reusable-configuration.md": "8. Reusable configuration",
+    "09-9-troubleshooting.md": "9. Troubleshooting",
+    "10-production-reality.md": "Production reality",
+    "11-common-mistakes.md": "Common mistakes",
+    "12-things-senior-engineers-notice.md": "Things senior engineers notice",
+    "13-interview-questions.md": "Interview questions",
+    "14-volume-2-checklist.md": "Volume 2 checklist"
+  }
+}
